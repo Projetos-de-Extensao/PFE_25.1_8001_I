@@ -26,7 +26,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
  
 <b>João Vitor Rodrigues Donda 
-</b> - A plataforma deve fornecer uma forma dos clientes comprarem ingressos de forma segura e rapida
+</b> -O principal objetivo seria uma forma dos clientes comprarem ingressos de forma segura e rapida
  
 <b>Felipe Maia</b> - Compra e vendas de ingressos
  
