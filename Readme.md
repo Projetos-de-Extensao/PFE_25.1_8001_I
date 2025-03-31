@@ -22,7 +22,7 @@ Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento
 
 ## Instalação 
 **Linguagens**: HTML,CSS e JavaScript<br>
-**Tecnologias**: VisualStudioCode<br>
+**Tecnologias**: VisualStudioCode, Git<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
 
