@@ -15,7 +15,7 @@
 | 202407155375  |  João Vitor Rodrigues Donda |
 
 ## Sobre 
-Site de compra de ingressos relacionados a futebol, shows e festas. 
+Site de compra de ingressos esportivos.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
