@@ -12,7 +12,7 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta...
+A metodologia utilizada baseou-se em um brainstorming inicial para levantar ideias e requisitos do sistema. Em seguida, essas informações foram organizadas em um mapa mental, facilitando a visualização e o entendimento das principais funcionalidades e processos da aplicação.
 </p>
  
 ## Mapa mental - Geral.
@@ -25,24 +25,26 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
  
 ### Mapa mental 2
- 
-[![Mapa mental Brainstorm](../assets/Mapas_mentais/...png)](assets/Mapas_mentais/....png)
+
+![Captura de tela 2025-04-06 191454](https://github.com/user-attachments/assets/bf6ca884-c21b-473d-8401-ca7e262b26ec)
+
  
 ## Conclusão
  
 <p align = "justify">
-O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app.
+O mapa mental desenvolvido oferece uma visão clara, organizada e estratégica do sistema de venda de ingressos. A estrutura visual facilita a compreensão dos principais tópicos do projeto, desde os objetivos da aplicação, passando pelo fluxo de cadastro e adição de eventos, até os recursos e funcionalidades esperadas.
+
+Cada ramificação do mapa agrupa ideias relacionadas, o que torna mais fácil visualizar conexões entre os processos e identificar requisitos importantes para o desenvolvimento. Além disso, o mapa ajuda a priorizar funcionalidades e a guiar futuras etapas do projeto, como a criação de wireframes, desenvolvimento e testes.
+
+Em resumo, o mapa mental é uma ferramenta essencial para alinhar a visão do projeto e manter o foco nas necessidades dos usuários e dos administradores da plataforma.
 </p>
  
 ## Referências
-> Mapa MentalXXX,  Disponível em: https://www.....
- 
-> Ferramentas para Mapas Mentais. Disponível em: https://www....
- 
-> Plataforma para usuários colaborar no desenho... Disponível em: https://...
+
+> Ferramentas para Mapas Mentais. Disponível em: https://www.mindmeister.com
  
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| dd/mm/yy | 1.0 | Criação do documento | xxx xxxx |
-| dd/mm/yy | 2.0 | Adicionado Mapa mental 2 | xxxx xxxx |
+| 06/04/2025 | 1.0 | Criação do documento |  |
+| 06/04/2025 | 2.0 | Adicionado Mapa mental 2 | Joao Vitor Rodrigues |
