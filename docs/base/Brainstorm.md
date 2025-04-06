@@ -10,7 +10,7 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, começou 15:50 e terminou 17:20, onde o Arthur Riess Cunha foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
 </p>
  
 ## Brainstorm
@@ -22,17 +22,17 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>Arthur Riess Cunha</b> - Compra e visualização simples de ingressos.
+<b>1</b> - Compra e visualização simples de ingressos.
 </p>
  
-<b>João Vitor Rodrigues Donda 
+<b>2 
 </b> -O principal objetivo seria uma forma dos clientes comprarem ingressos de forma segura e rapida
  
-<b>Felipe Maia</b> - Compra e vendas de ingressos
+<b>3</b> - Compra e vendas de ingressos
  
-<b>Caique Rechuan</b> - Principal objetivo da aplicação é facilitar o cliente na compra de ingressos para eventos. 
+<b>4</b> - Principal objetivo da aplicação é facilitar o cliente na compra de ingressos para eventos. 
  
-<b>Bernardo Cicchelli</b> - A plataforma deve gerenciar...
+
 </p>
  
 ---
@@ -40,58 +40,50 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 2. Como será o processo para cadastrar um novo clientetorneio?
  
 <p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
+<b>1</b></b> - O cliente vai apertar num botão de login
  
-<b>YYYY</b> - O cliente...
+<b>2</b> - O cliente vai fazer o login com seu email e senha anteriormente cadastrados
  
-<b>WWWW</b> - Com o usuário logado, ele deverá...
 
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
  
 ---
  
 ### 3. Como será a forma de adicionar produtos?
  
 <p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
+<b>1</b> - O moderador adicionará os produtos no site
 </p>
  
 <p align = "justify">
-<b>YYYYY</b> - O produto tem...
+<b>2</b> - O usuário poderá visualizar os produtos na homepage
 </p>
  
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
-
+<b>3</b> - O usuário poderá comprar os produtos
  
 ---
  
-### 4. Outras perguntas pertinentes ao contexto
-
+### 4. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
 <p align = "justify">
-<b>XXXX</b> - Com a localização...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
+<b>1</b> - Será criada uma área para produtores ou colaboradores acessarem
 </p>
  
-### 6. Quais informações seriam interessante para o cliente?
 <p align = "justify">
-   <b>XXX</b> - Informações...
+<b>2</b> - O cliente vai preencher um formulário com informações pessoais
+</p>
+
+<p align = "justify">
+<b>3</b> - O cliente vai adicionar também as informações do evento (Horário, localização, público esperado...)
+</p>
+
+--- 
+
+### 5. Quais informações seriam interessante para o cliente?
+<p align = "justify">
+   <b>1</b> - Filtro de busca por localização
    
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+   <b>2</b> - Filtro de busca por clube
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
+   <b>3</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
    
 </p>
  
@@ -99,32 +91,33 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 |ID|Descrição|
 |----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
+|BS01| O cliente poderá ver os principais eventos na homepage|
+|BS02| O cliente poderá comprar ingressos|
+|BS03| O cliente poderá cadastrar eventos|
+|BS04| O cliente poderá usar filtros para buscar eventos|
+|BS05| O cliente poderá visualizar os seus ingressos numa aba "Meus ingressos"|
+|BS06| Disponibilidade de vários idiomas|
+|BS07| O cliente poderá editar eventos cadastrados|
+|BS08| A interface deverá funcionar em dispositivos móveis (celulares e tablets)|
+|BS09| O cliente poderá fazer login|
+|BS10| Ao selecionar um evento o cliente poderá ver detalhes completos |
+|BS11| Na aba "Meus ingressos" o ingresso também deverá aparecer em forma de qrcode |
+|BS12| O site apresentará um footer com termos e uma aba de contato|
+|BS13| Na aba de contato os problemas mais frequentes (reembolsos, cancelamentos) já aparecerão num guia rápido|
+|BS14| Possibilidade de transferência de ingressos|
+
  
 ## Conclusão
 <p align = "justify">
-Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
+Através da aplicação do brainstorm, foi possível elicitar alguns dos primeiros requisitos do projeto, clarificando para a equipe como devemos desenvolver as funcionalidades do nosso site.
 </p>
 ## Referências Bibliográficas
- 
+> https://www.ingresse.com/
 > BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
  
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 31/03/2025 | 1.0 | Criação do documento | Arthur Riess Cunha |
+| 06/04/2025 | 2.0 | Elaboração do brainstorm | Arthur Riess Cunha e Caique Rechuan |
