@@ -30,4 +30,4 @@ Sympla:
 - Aba de coleções onde você vê os tipo de evento que você quer participar
 
 Tipo de site de evento que será desenvolvido:
-- Ingresso de futebol, shows e festas
+- Nossa conclusão foi optar por fazer um site que seja exclusivamente destinado a venda de ingressos de eventos esportivos.
