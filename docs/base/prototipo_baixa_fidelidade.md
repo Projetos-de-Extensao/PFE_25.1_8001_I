@@ -1,11 +1,10 @@
 # Protótipo de Baixa Fidelidade
 
-## Home Page
+## Home Page e Aba Meus Ingressos
 
-Adicione aqui o protótipo da **Home Page**.
+https://www.figma.com/design/uYHLHlDrKZr0ysZisIXw3L/Untitled?node-id=0-1&p=f&t=7zB7jpRytDaKxbGg-0
 
 ---
 
-## Aba Meus Ingressos
 
-Adicione aqui o protótipo da **Aba Meus Ingressos**.
+
