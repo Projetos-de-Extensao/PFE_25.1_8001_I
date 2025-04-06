@@ -11,3 +11,5 @@ Com isso, garantimos que o projeto seja mais eficiente e organizado para todos o
 ## Diagrama do Projeto
 
 ![image](https://github.com/user-attachments/assets/b86c27f9-f6f4-4996-8e59-1e28a92db6b7)
+
+*O diagrama foi feito na versão online do PlantUML.
