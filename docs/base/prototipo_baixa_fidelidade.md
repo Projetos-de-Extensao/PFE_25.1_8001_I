@@ -10,5 +10,5 @@ https://www.figma.com/design/uYHLHlDrKZr0ysZisIXw3L/Untitled?node-id=0-1&p=f&t=7
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
 | 31/03/2025 | 1.0 | Criação do documento | Arthur Riess Cunha |
-| 06/04/2025 | 2.0 | Elaboração do brainstorm | Arthur Riess Cunha e Caique Rechuan |
-
+| 06/04/2025 | 2.0 | Criação da home page | Felipe Maia|
+| 06/04/2025 | 3.0 | ... | ...|
