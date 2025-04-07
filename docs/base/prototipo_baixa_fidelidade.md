@@ -6,6 +6,10 @@ https://www.figma.com/design/uYHLHlDrKZr0ysZisIXw3L/Untitled?node-id=0-1&p=f&t=7
 
 ---
 
+## Referências
+
+> https://www.figma.com/
+
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
