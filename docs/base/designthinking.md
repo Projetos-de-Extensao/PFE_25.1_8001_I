@@ -89,7 +89,8 @@ Criar um site que facilite:
 
 ### 4. Prototipagem  
 
-*(Detalhes a serem adicionados futuramente.)*
+- Protótipo de baixa fidelidade: Figma
+- Protótipo de alta fidelidade: 
 
 ---
 
