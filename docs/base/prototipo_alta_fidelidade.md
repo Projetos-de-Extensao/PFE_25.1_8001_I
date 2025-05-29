@@ -13,7 +13,7 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 ## Metodologia
  
 <p align = "justify">
-Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade com auxílio do Material Design Color Tool.
+Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade.
 
 </p>
 <p>Observar a estrutura do AHT para a proposição das ações no protótipo.</p> 
@@ -21,80 +21,64 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
  
 ### Versão 1.0
  
+### Tela Header + Nav
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 26 13_77e0564c](https://github.com/user-attachments/assets/4932f251-4c8f-4ce2-9686-a5b792eab76e)
+
+ 
+### Tela jogos em destaque
+ ![Imagem do WhatsApp de 2025-05-28 à(s) 22 26 35_cfe90231](https://github.com/user-attachments/assets/c4cd17ed-31eb-475b-86a6-b9d922cf4983)
+
+
+ 
+### Tela organizador na home
+ ![Imagem do WhatsApp de 2025-05-28 à(s) 22 27 14_a4ffce9d](https://github.com/user-attachments/assets/3cf83ffd-438d-460d-9553-b3a06a0b789b)
+
+
+ 
+### Tela proximos jogos na home
+ ![Imagem do WhatsApp de 2025-05-28 à(s) 22 27 30_168418a3](https://github.com/user-attachments/assets/949d298a-1488-44ea-860e-edf3ebaf6542)
+
+
+ 
+### Tela categorias + footer na home
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 27 46_5b27efcd](https://github.com/user-attachments/assets/b4c8fecb-e327-4a72-9923-af07913327cb)
+
+ 
+### Tela aba organizadores
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 28 27_05163500](https://github.com/user-attachments/assets/e698f89f-b922-4572-b2ac-f884506339f0)
+
+ 
+### Tela aba organizadores pt 2
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 28 53_a132c99c](https://github.com/user-attachments/assets/6b5b7d48-71f9-4d8a-a014-1add8b554d83)
+
+ 
+### Tela banner organizadores
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 27 14_a4ffce9d](https://github.com/user-attachments/assets/35b3a194-759a-4cd1-8f0d-49e10ea375e9)
+
+
+### Tela FAQ
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 29 23_c68079c4](https://github.com/user-attachments/assets/bb70ced2-79f1-44e2-b4cc-9a8f236d19cc)
+
+
+### Tela aba meus ingressos
+![Imagem do WhatsApp de 2025-05-28 à(s) 22 29 46_243f37ce](https://github.com/user-attachments/assets/74c0de51-aab6-4714-a05d-5060083f12c0)
+
+
 ### Tela Login
-[![Prototipo 1](../assets/prototipo/prototipo_1.png)](../assets/prototipo/prototipo_1.png)
- 
-### Tela Cadastro 1
- 
-[![Prototipo 2](../assets/prototipo/prototipo_2.png)](../assets/prototipo/prototipo_2.png)
- 
-### Tela Cadastro 2
- 
-[![Prototipo 3](../assets/prototipo/prototipo_3.png)](../assets/prototipo/prototipo_3.png)
- 
-### Tela Esqueceu Senha
- 
-[![Prototipo 4](../assets/prototipo/prototipo_4.png)](../assets/prototipo/prototipo_4.png)
- 
-### Tela do Feed
-[![Prototipo 5](../assets/prototipo/prototipo_5.png)](../assets/prototipo/prototipo_5.png)
- 
-### Tela Feed com configurações
-[![Prototipo 6](../assets/prototipo/prototipo_6.png)](../assets/prototipo/prototipo_6.png)
- 
-### Tela Perfil
-[![Prototipo 7](../assets/prototipo/prototipo_7.png)](../assets/prototipo/prototipo_7.png)
- 
-### Tela Cadastrar torneio 1
-
- 
 
 
-<p align = "justify">
-Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
-</p>
- 
-### Versão 2.0
 
-### Tela Login
-[![Prototipo 1](../assets/prototipo/tela_de_login.png)](../assets/prototipo/tela_de_login.png)
+### Tela Cadastro
 
-### Tela Cadastro 
- 
-[![Prototipo 2](../assets/prototipo/registrar.png)](../assets/prototipo/registrar.png)
 
-### Tela Esqueceu Senha
- 
-[![Prototipo 3](../assets/prototipo/esqueceu_a_senha.png)](../assets/prototipo/esqueceu_a_senha.png)
+### Tela Esqueci minha senha
 
-### Tela Perfil
-[![Prototipo 4](../assets/prototipo/editar_perfil.png)](../assets/prototipo/editar_perfil.png)
 
-### Tela do Feed
-[![Prototipo 5](../assets/prototipo/feed.png)](../assets/prototipo/feed.png)
+### Tela Carrinho
 
-### Tela Cadastrar em um torneio
-[![Prototipo 6](../assets/prototipo/cadastrar_no_torneio.png)](../assets/prototipo/cadastrar_no_torneio.png)
 
-### Tela Cadastrar torneio
-[![Prototipo 7](../assets/prototipo/cadastrar_torneio.png)](../assets/prototipo/cadastrar_torneio.png)
+### Tela Pagamento
 
-### Tela Cadastrar torneio 2
-[![Prototipo 8](../assets/prototipo/cadastrar_torneio_2.png)](../assets/prototipo/cadastrar_torneio_2.png)
-
-### Tela dos meus torneios
-[![Prototipo 9](../assets/prototipo/meus_torneios.png)](../assets/prototipo/meus_torneios.png)
-
-### Tela das chaves do torneio
-[![Prototipo 10](../assets/prototipo/ver_torneio.png)](../assets/prototipo/ver_torneio.png)
-
-### Tela das estatíscicas
-[![Prototipo 11](../assets/prototipo/ver_estatisticas.png)](../assets/prototipo/ver_estatisticas.png)
-
-### Tela de adicionar resultado das partidas
-[![Prototipo 12](../assets/prototipo/adicionar_resultado_da_partida.png)](../assets/prototipo/adicionar_resultado_da_partida.png)
-
-link para o <a href="https://www.figma.com/file/karoCnQtvMXWHEwdMuhQs0/Prototipo?node-id=0%3A1">Protótipo</a>
  
 ## Conclusão
  
@@ -114,7 +98,6 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
  
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| 07/09/20 | 1.0 | Criação do documento | Lucas Alexandre e Matheus Estanislau  |
-| 07/09/20 | 1.1 | Adicionado as imagens do protótipo | Lucas Alexandre e Matheus Estanislau  |
-| 07/09/20 | 1.2 | Adicionado conclusão e referências  | Lucas Alexandre e Matheus Estanislau  |
-| 26/10/20 | 2.0 | Adicionada a versão 2.0 do protótipo| João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan|
+| 28/05/25 | 1.0 | Criação do documento | Joao Vitor Rodrigues, Bernardo Cichelli, Arthur Riess, Caique Rechuan, Felipe Maia  |
+| 28/05/25 | 1.1 | Adicionado as imagens do protótipo | Joao Vitor Rodrigues  |
+| 28/05/25 | 1.2 | Adicionado conclusão e referências  | Joao Vitor Rodrigues |
