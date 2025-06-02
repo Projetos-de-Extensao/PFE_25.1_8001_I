@@ -90,7 +90,7 @@ Criar um site que facilite:
 ### 4. Prototipagem  
 
 - Protótipo de baixa fidelidade: Figma
-- Protótipo de alta fidelidade: 
+- Protótipo de alta fidelidade: Lovable
 
 ---
 
