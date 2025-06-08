@@ -1,0 +1,28 @@
+{
+    "games": [
+        {
+        "id": 1,
+        "competition": "Campeonato Brasileiro",
+        "date": "2023-10-01",
+        "location": "Stadium A",
+        "teams": ["Flamengo", "Corinthians"],
+        "status": "scheduled"
+        },
+        {
+        "id": 2,
+        "competition": "Campeonato Brasileiro",
+        "date": "2023-10-01",
+        "location": "Stadium A",
+        "teams": ["Flamengo", "Corinthians"],
+        "status": "scheduled"
+        },
+        {
+        "id": 3,
+        "competition": "Campeonato Brasileiro",
+        "date": "2023-10-01",
+        "location": "Stadium A",
+        "teams": ["Flamengo", "Corinthians"],
+        "status": "scheduled"
+        }
+    ]
+}
