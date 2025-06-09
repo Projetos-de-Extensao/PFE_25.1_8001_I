@@ -1,28 +1,58 @@
-{
-    "games": [
-        {
-        "id": 1,
-        "competition": "Campeonato Brasileiro",
-        "date": "2023-10-01",
-        "location": "Stadium A",
-        "teams": ["Flamengo", "Corinthians"],
-        "status": "scheduled"
-        },
-        {
-        "id": 2,
-        "competition": "Campeonato Brasileiro",
-        "date": "2023-10-01",
-        "location": "Stadium A",
-        "teams": ["Flamengo", "Corinthians"],
-        "status": "scheduled"
-        },
-        {
-        "id": 3,
-        "competition": "Campeonato Brasileiro",
-        "date": "2023-10-01",
-        "location": "Stadium A",
-        "teams": ["Flamengo", "Corinthians"],
-        "status": "scheduled"
-        }
-    ]
-}
+[
+  {
+    "id": 1,
+    "title": "Flamengo x Palmeiras",
+    "date": "2025-06-20",
+    "location": "Maracanã",
+    "category": "Brasileirão",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Corinthians x São Paulo",
+    "date": "2025-07-05",
+    "location": "Neo Química Arena",
+    "category": "Brasileirão",
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Grêmio x Internacional",
+    "date": "2025-08-12",
+    "location": "Arena do Grêmio",
+    "category": "Libertadores",
+    "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Cruzeiro x Atlético-MG",
+    "date": "2025-09-01",
+    "location": "Mineirão",
+    "category": "Copa do Brasil",
+    "image": "https://images.unsplash.com/photo-1505843279827-4b522fae12b2?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Santos x Vasco",
+    "date": "2025-09-15",
+    "location": "Vila Belmiro",
+    "category": "Amistoso",
+    "image": "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 6,
+    "title": "Botafogo x Fluminense",
+    "date": "2025-10-10",
+    "location": "Engenhão",
+    "category": "Brasileirão",
+    "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 7,
+    "title": "Bahia x Vitória",
+    "date": "2025-11-02",
+    "location": "Fonte Nova",
+    "category": "Estaduais",
+    "image": "https://images.unsplash.com/photo-1505843279827-4b522fae12b2?auto=format&fit=crop&w=600&q=80"
+  }
+]
