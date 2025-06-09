@@ -1,4 +1,4 @@
-import Button from '../Button/button';
+import Button from '../Button/Button';
 import './index.css';
 
 const links = [

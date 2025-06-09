@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import Home from './projeto/Home/home'
+import Home from './components/Home/Home'
+import Footer from './components/Footer/Footer'
 import './App.css'
-import Footer from './projeto/Footer/footer'
-import Header from './projeto/Header/header'
-import Button from './projeto/Button/button'
-import EventCardList from './projeto/EventCardList'
-import {games} from './data/games.json'
+import Header from './components/Header/Header'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +11,7 @@ function App() {
     <main>
       <Header />
       <Home />
-      <EventCardList events={games} />
+      {/*<EventCardList events={games} />*/}
       <Footer />
     </main>
    
