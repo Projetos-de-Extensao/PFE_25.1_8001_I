@@ -1,0 +1,93 @@
+.pagina-organizadores {
+  background-color: #f9fafb;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.cabecalho-organizador {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #1E3A8A, #06B6D4);
+  color: white;
+}
+
+.cabecalho-organizador h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cabecalho-organizador p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+.botao-destaque {
+  background-color: white;
+  color: #1E3A8A;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-destaque:hover {
+  background-color: #e5e7eb;
+}
+
+.secao-formulario {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+.secao-formulario h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.formulario-organizador {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.formulario-organizador label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.formulario-organizador input,
+.formulario-organizador select,
+.formulario-organizador textarea {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.formulario-organizador textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.botao-enviar {
+  margin-top: 30px;
+  background-color: #1E3A8A;
+  color: white;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #1D4ED8;
+}
