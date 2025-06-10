@@ -1,0 +1,43 @@
+.ingressos-container {
+  background-color: #1D4ED8; /* Cor principal */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.ingresso-info {
+  background-color: #2D3748; /* Cor de fundo do conteúdo */
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.partida, .estadio, .dados-pessoais {
+  margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.codigo-qr img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
