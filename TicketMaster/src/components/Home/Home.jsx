@@ -87,7 +87,7 @@ export default function Home() {
                         <div className="category-icon">⚽</div>
                         <div className="category-name">{cat}</div>
                     </div>
-                ))}
+                ))} 
             </div>
         </section>
         </>
