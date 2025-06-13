@@ -13,7 +13,6 @@ function App() {
     <main>
       <Header />
       <Home />
-      <EventCardList events={games} />
       <Footer />
     </main>
    

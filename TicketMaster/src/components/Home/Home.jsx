@@ -10,22 +10,18 @@ export default function Home() {
     const [category, setCategory] = useState('Todas');
 
     const categories = [
-        'Todas',
         'Brasileirão',
-        'Libertadores',
         'Copa do Brasil',
-        'Amistoso',
-        'Sul-Americana',
-        'Recopa',
-        'Supercopa',
+        'Libertadores',
+        'Flamengo',
+        'Palmeiras',
+        'Vasco',
+        'Corinthians',
         'Estaduais',
-        'Internacional',
         'Feminino',
         'Sub-20',
-        'Sub-17'
     ];
 
-    // Filtro centralizado usando apenas games.json
     const filteredEvents = games.filter(event =>
         event.title.toLowerCase().includes(search.toLowerCase()) &&
         (team === '' || event.title.toLowerCase().includes(team.toLowerCase())) &&
@@ -33,86 +29,67 @@ export default function Home() {
         (category === 'Todas' || event.category === category)
     );
 
+    const uniqueEvents = Array.from(new Map(filteredEvents.map(e => [e.id, e])).values());
+
     return (
+        <>
         <div className="home-container">
             <header className="home-header">
-                <h1>Bem-vindo ao TicketMaster Futebol</h1>
-                <p>Compre ingressos para os melhores jogos de futebol do Brasil!</p>
+                <h1>Bem-vindo ao TicketMaster</h1>
+                <p>Encontre os melhores eventos esportivos do Brasil</p>
             </header>
 
-            <section className="highlight-section">
-                <img src="https://images.unsplash.com/photo-1505843279827-4b522fae12b2?auto=format&fit=crop&w=800&q=80" alt="Jogo em destaque" />
-                <div className="highlight-info">
-                    <h2>Jogo em Destaque</h2>
-                    <p>Garanta seu ingresso para o clássico da rodada e viva a emoção do estádio!</p>
-                </div>
-            </section>
-
-            <section className="filter-section">
+            <form className="filter-bar">
                 <input
                     type="text"
-                    placeholder="Buscar por jogo..."
+                    placeholder="Buscar por título..."
                     value={search}
                     onChange={e => setSearch(e.target.value)}
-                    className="filter-input"
                 />
                 <input
                     type="text"
-                    placeholder="Buscar por time..."
+                    placeholder="Time..."
                     value={team}
                     onChange={e => setTeam(e.target.value)}
-                    className="filter-input"
                 />
                 <input
                     type="date"
                     value={date}
                     onChange={e => setDate(e.target.value)}
-                    className="filter-input"
                 />
-            </section>
-
-            <section className="events-section">
-                <h2>Próximos Jogos</h2>
-                <div className="events-list">
-                    {filteredEvents.length > 0 ? (
-                        <EventCardList events={filteredEvents.map(event => ({
-                            ...event,
-                            competition: event.category,
-                            teams: event.title.split(' x ')
-                        }))} />
-                    ) : (
-                        <p>Nenhum jogo encontrado.</p>
-                    )}
-                </div>
-            </section>
-
-            <section className="organizer-section">
-                <div className="organizer-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80"
-                        alt="Organizador"
-                        className="organizer-img"
-                    />
-                    <h2>Área do Organizador</h2>
-                    <p>Gerencie seus jogos, acompanhe vendas e crie novas experiências para os torcedores.</p>
-                    <button className="btn-primary">Acessar Painel do Organizador</button>
-                </div>
-            </section>
-
-            <section className="categories-section categories-bottom">
-                <h3>Categorias</h3>
-                <div className="categories-list">
+                <select value={category} onChange={e => setCategory(e.target.value)}>
+                    <option value="Todas">Todas</option>
                     {categories.map(cat => (
-                        <button
-                            key={cat}
-                            className={`category-btn${category === cat ? ' active' : ''}`}
-                            onClick={() => setCategory(cat)}
-                        >
-                            <span>{cat}</span>
-                        </button>
+                        <option key={cat} value={cat}>{cat}</option>
                     ))}
-                </div>
-            </section>
+                </select>
+            </form>
+
+            <EventCardList events={uniqueEvents} />
         </div>
+
+        <section className="organizer-call fade-up">
+            <h2>Seja um organizador</h2>
+            <p>Quer divulgar seus eventos esportivos para milhares de fãs? Junte-se à nossa plataforma e tenha visibilidade nacional!</p>
+            <button
+                className="organizer-button"
+                onClick={() => window.location.href = '/organizadores'}
+            >
+                Cadastrar evento
+            </button>
+        </section>
+
+        <section className="category-showcase fade-up-delay">
+            <h3>Categorias em destaque</h3>
+            <div className="category-grid-large">
+                {categories.map(cat => (
+                    <div className="category-card-large" key={cat}>
+                        <div className="category-icon">⚽</div>
+                        <div className="category-name">{cat}</div>
+                    </div>
+                ))}
+            </div>
+        </section>
+        </>
     );
 }
