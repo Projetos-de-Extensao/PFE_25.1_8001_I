@@ -10,7 +10,7 @@
 }
 
 .logo {
-  font-size: 1.8rem;  /* Maior destaque */
+  font-size: 1.8rem;
   font-weight: 900;
   color: #0077b6;
   margin: 0;
@@ -25,17 +25,17 @@
   gap: 16px;
 }
 
-.nav-links a {
+.nav-link {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   color: #1a1a1a;
   padding: 4px 12px;
   border-radius: 20px;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
   background-color: #0077b6;
   color: #fff;
 }
@@ -70,7 +70,7 @@
     align-items: flex-start;
   }
 
-  .nav-links a {
+  .nav-link {
     width: 100%;
   }
 }

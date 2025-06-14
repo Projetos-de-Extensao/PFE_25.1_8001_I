@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => (
@@ -26,9 +26,10 @@ const Footer = () => (
             </div>
             <nav className="footer__nav" aria-label="Navegação do rodapé">
                 <ul>
-                    <li><a href="/organizadores">Organizadores</a></li>
-                    <li><a href="/ingressos">Ingressos</a></li>
-                    <li><a href="/contato">Contato e FAQ</a></li>
+                    <li><Link to="/" className="footer-link">Home</Link></li>
+                    <li><Link to="/organizadores" className="footer-link">Organizadores</Link></li>
+                    <li><Link to="/ingressos" className="footer-link">Ingressos</Link></li>
+                    <li><Link to="/contato" className="footer-link">Contato e FAQ</Link></li>
                 </ul>
             </nav>
             <div className="footer__social" aria-label="Redes sociais">
