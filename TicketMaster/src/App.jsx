@@ -1,21 +1,27 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
 import './App.css'
 import Header from './components/Header/Header'
-import games from './data/games.json';
+import Contato from './components/Contato/Contato'
+import games from './data/games.json'
 import EventCardList from './components/EventCardList/EventCardList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main>
+    <BrowserRouter>
       <Header />
-      <Home />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+      </main>
       <Footer />
-    </main>
-   
+    </BrowserRouter>
   )
 }
 

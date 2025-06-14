@@ -1,6 +1,6 @@
 /* Estilos gerais do rodapé */
 .footer {
-  background: #0077b6; /* Azul principal */
+  background: #0077b6;
   color: #fff;
   padding: 40px 0 0 0;
   font-family: 'Inter', Arial, sans-serif;
@@ -38,6 +38,36 @@
   line-height: 1.5;
 }
 
+/* Bloco de contato */
+.footer__contact {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-style: normal;
+}
+
+.footer__contact-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(1.2);
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.footer__contact a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+}
+
+.footer__contact a:hover,
+.footer__contact a:focus {
+  color: #023e8a;
+}
+
 .footer__nav {
   flex: 1 1 160px;
   min-width: 160px;
@@ -62,7 +92,7 @@
 
 .footer__nav a:hover,
 .footer__nav a:focus {
-  color: #023e8a; /* Azul mais escuro para destaque */
+  color: #023e8a;
 }
 
 .footer__social {
@@ -117,6 +147,9 @@
   }
   .footer__social {
     justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+  .footer__contact {
     margin-bottom: 12px;
   }
 }
