@@ -33,63 +33,66 @@ export default function Home() {
 
     return (
         <>
-        <div className="home-container">
-            <header className="home-header">
-                <h1>Bem-vindo ao TicketMaster</h1>
-                <p>Encontre os melhores eventos esportivos do Brasil</p>
-            </header>
-
-            <form className="filter-bar">
-                <input
-                    type="text"
-                    placeholder="Buscar por título..."
-                    value={search}
-                    onChange={e => setSearch(e.target.value)}
-                />
-                <input
-                    type="text"
-                    placeholder="Time..."
-                    value={team}
-                    onChange={e => setTeam(e.target.value)}
-                />
-                <input
-                    type="date"
-                    value={date}
-                    onChange={e => setDate(e.target.value)}
-                />
-                <select value={category} onChange={e => setCategory(e.target.value)}>
-                    <option value="Todas">Todas</option>
-                    {categories.map(cat => (
-                        <option key={cat} value={cat}>{cat}</option>
-                    ))}
-                </select>
-            </form>
-
-            <EventCardList events={uniqueEvents} />
-        </div>
-
-        <section className="organizer-call fade-up">
-            <h2>Seja um organizador</h2>
-            <p>Quer divulgar seus eventos esportivos para milhares de fãs? Junte-se à nossa plataforma e tenha visibilidade nacional!</p>
-            <button
-                className="organizer-button"
-                onClick={() => window.location.href = '/organizadores'}
-            >
-                Cadastrar evento
-            </button>
-        </section>
-
-        <section className="category-showcase fade-up-delay">
-            <h3>Categorias em destaque</h3>
-            <div className="category-grid-large">
-                {categories.map(cat => (
-                    <div className="category-card-large" key={cat}>
-                        <div className="category-icon">⚽</div>
-                        <div className="category-name">{cat}</div>
+            <div className="hero-section">
+                <div className="hero-banner">
+                    <div className="hero-text">
+                        <h1>Bem-vindo ao TicketSeller</h1>
+                        <p>Encontre os melhores eventos esportivos do Brasil</p>
                     </div>
-                ))} 
+                </div>
             </div>
-        </section>
+
+            <div className="home-container">
+                <form className="filter-bar">
+                    <input
+                        type="text"
+                        placeholder="Buscar por título..."
+                        value={search}
+                        onChange={e => setSearch(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Time..."
+                        value={team}
+                        onChange={e => setTeam(e.target.value)}
+                    />
+                    <input
+                        type="date"
+                        value={date}
+                        onChange={e => setDate(e.target.value)}
+                    />
+                    <select value={category} onChange={e => setCategory(e.target.value)}>
+                        <option value="Todas">Todas</option>
+                        {categories.map(cat => (
+                            <option key={cat} value={cat}>{cat}</option>
+                        ))}
+                    </select>
+                </form>
+
+                <EventCardList events={uniqueEvents} />
+            </div>
+
+            <section className="organizer-call fade-up">
+                <h2>Seja um organizador</h2>
+                <p>Quer divulgar seus eventos esportivos para milhares de fãs? Junte-se à nossa plataforma e tenha visibilidade nacional!</p>
+                <button
+                    className="organizer-button"
+                    onClick={() => window.location.href = '/organizadores'}
+                >
+                    Cadastrar evento
+                </button>
+            </section>
+
+            <section className="category-showcase fade-up-delay">
+                <h3>Categorias em destaque</h3>
+                <div className="category-grid-large">
+                    {categories.map(cat => (
+                        <div className="category-card-large" key={cat}>
+                            <div className="category-name">{cat}</div>
+                        </div>
+                    ))}
+                </div>
+            </section>
         </>
     );
 }
