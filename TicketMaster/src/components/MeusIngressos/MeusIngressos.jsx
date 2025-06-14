@@ -1,5 +1,5 @@
 import React from 'react';
-import './MeusIngressos.css';
+import './meusingressos.css';
 
 const MeusIngressos = () => {
   return (
@@ -27,9 +27,7 @@ const MeusIngressos = () => {
           <p>Tipo ingresso: Entrada Inteira</p>
           <p>Pedido nº: 8695811-4</p>
         </div>
-        <div className="codigo-qr">
-          <img src="qr-code.png" alt="Código QR" />
-        </div>
+        
       </div>
     </div>
   );

@@ -26,9 +26,9 @@ const Footer = () => (
             </div>
             <nav className="footer__nav" aria-label="Navegação do rodapé">
                 <ul>
-                    <li><a href="/eventos">Eventos</a></li>
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/organizadores">Organizadores</a></li>
+                    <li><a href="/ingressos">Ingressos</a></li>
+                    <li><a href="/contato">Contato e FAQ</a></li>
                 </ul>
             </nav>
             <div className="footer__social" aria-label="Redes sociais">
