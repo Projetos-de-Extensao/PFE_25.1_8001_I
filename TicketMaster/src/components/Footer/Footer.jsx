@@ -19,7 +19,7 @@ const Footer = () => (
                 />
                 {/* Descrição curta da plataforma */}
                 <p className="footer__description">
-                    Sua plataforma para eventos, ingressos e experiências inesquecíveis.
+                    TicketSeller é a sua plataforma de venda de ingressos para eventos esportivos. Conectamos torcedores e organizadores para uma experiência inesquecível.
                 </p>
             </div>
             {/* Navegação do rodapé */}
@@ -28,7 +28,6 @@ const Footer = () => (
                     {/* Links de navegação para páginas principais */}
                     <li><a href="/eventos">Eventos</a></li>
                     <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/contato">Contato</a></li>
                     <li><a href="/faq">FAQ</a></li>
                 </ul>
             </nav>
@@ -50,7 +49,7 @@ const Footer = () => (
         </div>
         {/* Linha inferior do rodapé com direitos autorais dinâmicos */}
         <div className="footer__bottom">
-            <span>© {new Date().getFullYear()} TicketMaster. Todos os direitos reservados.</span>
+            <span>© {new Date().getFullYear()} TicketSeller. Todos os direitos reservados.</span>
         </div>
     </footer>
 );
