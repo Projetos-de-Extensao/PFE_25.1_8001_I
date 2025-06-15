@@ -1,53 +1,64 @@
-import { Link } from "react-router-dom";
-import "./Footer.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+// AQUI ESTAMOS IMPORTANDO OS ÍCONES DA BIBLIOTECA QUE VOCÊ INSTALOU
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import './Footer.css';
 
-const Footer = () => (
+const Footer = () => {
+  return (
     <footer className="footer">
-        <div className="footer__container">
-            <div className="footer__logo-section">
-                <img
-                    src="/assets/logo-footer.svg"
-                    alt="Logo da TicketSeller"
-                    className="footer__logo"
-                />
-                <p className="footer__description">
-                    TicketSeller é a sua plataforma de venda de ingressos para eventos esportivos. Conectamos torcedores e organizadores para uma experiência inesquecível.
-                </p>
-                <address className="footer__contact">
-                    <img
-                        src="/assets/email.svg"
-                        alt="Ícone de e-mail"
-                        className="footer__contact-icon"
-                    />
-                    <a href="mailto:contato@ticketseller.com">
-                        contato@ticketseller.com
-                    </a>
-                </address>
+      <div className="footer-container">
+        <div className="footer-main">
+          {/* Coluna 1: Sobre (com logo em texto) */}
+          <div className="footer-column footer-about">
+            <Link to="/" className="footer-logo">
+              <span>TicketSeller</span>
+            </Link>
+            <p className="footer-description">
+              A plataforma líder em venda de ingressos para jogos de futebol no Brasil. Conectamos torcedores aos seus times favoritos com segurança e facilidade.
+            </p>
+          </div>
+
+          {/* Coluna 2: Links Úteis */}
+          <div className="footer-column footer-links">
+            <h4 className="footer-title">Links Úteis</h4>
+            <ul>
+              <li><Link to="/faq">Perguntas Frequentes</Link></li>
+            </ul>
+          </div>
+
+          {/* Coluna 3: Suporte */}
+          <div className="footer-column footer-links">
+            <h4 className="footer-title">Suporte</h4>
+            <ul>
+              <li><Link to="/contato">Contato</Link></li>
+            </ul>
+          </div>
+          
+          {/* Coluna 4: Redes Sociais (COM OS ÍCONES) */}
+          <div className="footer-column footer-social">
+            <h4 className="footer-title">Redes Sociais</h4>
+            <div className="social-icons">
+              {/* CADA ÍCONE É UM COMPONENTE CHAMADO AQUI */}
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <FaFacebookF />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FaInstagram />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <FaTwitter />
+              </a>
             </div>
-            <nav className="footer__nav" aria-label="Navegação do rodapé">
-                <ul>
-                    <li><Link to="/" className="footer-link">Home</Link></li>
-                    <li><Link to="/organizadores" className="footer-link">Organizadores</Link></li>
-                    <li><Link to="/ingressos" className="footer-link">Ingressos</Link></li>
-                    <li><Link to="/contato" className="footer-link">Contato e FAQ</Link></li>
-                </ul>
-            </nav>
-            <div className="footer__social" aria-label="Redes sociais">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook TicketSeller">
-                    <img src="/assets/facebook.svg" alt="Acesse nosso Facebook" />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram TicketSeller">
-                    <img src="/assets/instagram.svg" alt="Acesse nosso Instagram" />
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter TicketSeller">
-                    <img src="/assets/twitter.svg" alt="Acesse nosso Twitter" />
-                </a>
-            </div>
+          </div>
         </div>
-        <div className="footer__bottom">
-            <span>© {new Date().getFullYear()} TicketSeller. Todos os direitos reservados.</span>
+
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} TicketSeller. Todos os direitos reservados.</p>
         </div>
+      </div>
     </footer>
-);
+  );
+};
 
 export default Footer;

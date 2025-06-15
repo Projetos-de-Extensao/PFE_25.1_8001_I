@@ -1,159 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .footer {
-  background: #0077b6;
-  color: #fff;
-  padding: 40px 0 0 0;
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.01em;
-  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.08);
+  background-color: #283593;
+  color: #e8eaf6;
+  padding: 60px 0 20px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.footer__container {
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 20px;
+}
+
+.footer-main {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: space-between;
+  gap: 30px; 
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #3949ab;
   align-items: flex-start;
-  gap: 32px;
 }
 
-.footer__logo-section {
-  flex: 1 1 220px;
-  min-width: 220px;
+/* Coluna "Sobre" */
+.footer-about {
+  flex: 2; 
+  min-width: 300px;
 }
 
-.footer__logo {
-  width: 140px;
-  margin-bottom: 16px;
-  display: block;
+/* Coluna de Links */
+.footer-links {
+  flex: 1; 
+  min-width: 180px; 
 }
 
-.footer__description {
-  color: #fff;
-  font-size: 1rem;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.footer__contact {
-  margin-top: 18px;
+/* Coluna Social */
+.footer-social {
+  flex: 1;
+  min-width: 180px;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  font-style: normal;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.footer__contact-icon {
-  width: 22px;
-  height: 22px;
-  filter: brightness(1.2);
-  background: #fff;
-  border-radius: 50%;
-  padding: 2px;
+/* --- Estilos dos Elementos Internos --- */
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
-.footer__contact a {
-  color: #fff;
-  text-decoration: underline;
-  font-size: 0.98rem;
-  transition: color 0.2s;
+.footer-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c5cae9;
+  max-width: 350px;
 }
 
-.footer__contact a:hover,
-.footer__contact a:focus {
-  color: #023e8a;
+.footer-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.footer__nav {
-  flex: 1 1 160px;
-  min-width: 160px;
-}
-
-.footer__nav ul {
+.footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer__nav li {
-  margin-bottom: 12px;
-}
-
-.footer-link {
-  color: #fff;
+.footer-links ul li a {
+  color: #c5cae9;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s, background 0.2s;
-  padding: 4px 12px;
-  border-radius: 20px;
-  display: inline-block;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
-.footer-link:hover,
-.footer-link:focus {
-  color: #023e8a;
-  background: #fff;
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
 }
 
-.footer__social {
-  flex: 1 1 120px;
-  min-width: 120px;
+/* Ícones de Redes Sociais */
+.social-icons {
   display: flex;
   gap: 16px;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-.footer__social a img {
-  width: 32px;
-  height: 32px;
-  filter: grayscale(1) brightness(1.2);
-  background: #fff;
-  border-radius: 50%;
-  padding: 4px;
-  transition: filter 0.2s, transform 0.2s, background 0.2s;
+.social-icons a {
+  color: #c5cae9;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer__social a:hover img,
-.footer__social a:focus img {
-  filter: none;
-  background: #023e8a;
+.social-icons a:hover {
+  color: #ffffff;
   transform: scale(1.1);
 }
 
-.footer__bottom {
-  border-top: 1px solid #fff;
-  margin-top: 32px;
-  padding: 18px 0;
+/* Seção de Copyright */
+.footer-bottom {
   text-align: center;
-  color: #fff;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
-}
-
-@media (max-width: 900px) {
-  .footer__container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
-    padding: 0 16px;
-  }
-
-  .footer__logo-section,
-  .footer__nav,
-  .footer__social {
-    min-width: 0;
-    flex: 1 1 100%;
-  }
-
-  .footer__social {
-    justify-content: flex-start;
-    margin-bottom: 12px;
-  }
-
-  .footer__contact {
-    margin-bottom: 12px;
-  }
+  font-size: 0.9rem;
+  color: #9fa8da;
 }
