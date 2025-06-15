@@ -1,75 +1,117 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Organizadores.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt, faBuilding, faEnvelope, faPhone, faTimes, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-const Organizadores = () => {
+function Organizadores() {
+  const [formData, setFormData] = useState({
+    nomeEmpresa: '',
+    nomeEvento: '',
+    emailContato: '',
+    telefoneContato: '',
+    nomeDoEventoDetalhado: '',
+    dataEvento: '',
+    publicoEsperado: '',
+    localEvento: '',
+  });
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Aqui você adicionaria a lógica para enviar os dados para um servidor, por exemplo.
+    console.log('Dados do formulário enviados:', formData);
+    
+    setShowSuccessMessage(true);
+
+    // Esconde a mensagem de sucesso após 3 segundos
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+      
+      // Opcional: Limpa os campos do formulário
+      setFormData({
+        nomeEmpresa: '',
+        nomeEvento: '',
+        emailContato: '',
+        telefoneContato: '',
+        nomeDoEventoDetalhado: '',
+        dataEvento: '',
+        publicoEsperado: '',
+        localEvento: '',
+      });
+    }, 3000);
+  };
+
+  const handleClose = () => {
+    // No futuro, você pode usar isso para fechar o modal, por exemplo.
+    console.log('Modal fechado.');
+  };
+
   return (
-    <div className="pagina-organizadores">
-      <section className="cabecalho-organizador">
-        <h1>Seja um Organizador</h1>
-        <p>Venda seus ingressos na maior plataforma de tickets do Brasil.</p>
-        <button className="botao-destaque">Saiba mais</button>
-      </section>
+    <div className="organizadores-page-container">
+      <div className="modal-overlay">
+        <div className="modal-content">
+          <button className="close-button" onClick={handleClose}>
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+          <div className="modal-header">
+            <FontAwesomeIcon icon={faBuilding} className="header-icon" />
+            <h2>Venda ingressos online</h2>
+            <p>Se você está buscando parcerias ou soluções para o seu evento, preencha os dados abaixo.</p>
+          </div>
+          <form onSubmit={handleSubmit} className="modal-form">
+            <div className="input-group">
+              <label htmlFor="nomeEmpresa">Nome da empresa</label>
+              <input type="text" id="nomeEmpresa" name="nomeEmpresa" value={formData.nomeEmpresa} onChange={handleChange} required />
+            </div>
+            <div className="input-group">
+              <label htmlFor="nomeEvento">Nome do evento</label>
+              <input type="text" id="nomeEvento" name="nomeEvento" value={formData.nomeEvento} onChange={handleChange} required />
+            </div>
+            <div className="input-group">
+              <label htmlFor="emailContato">E-mail para contato</label>
+              <input type="email" id="emailContato" name="emailContato" value={formData.emailContato} onChange={handleChange} required />
+            </div>
+            <div className="input-group">
+              <label htmlFor="telefoneContato">Telefone para contato</label>
+              <input type="tel" id="telefoneContato" name="telefoneContato" value={formData.telefoneContato} onChange={handleChange} required />
+            </div>
+            <div className="input-group">
+              <label htmlFor="dataEvento">Data</label>
+              <div className="date-input-wrapper">
+                <input type="text" id="dataEvento" name="dataEvento" placeholder="dd/mm/aaaa" value={formData.dataEvento} onChange={handleChange} required />
+                <FontAwesomeIcon icon={faCalendarAlt} className="input-icon" />
+              </div>
+            </div>
+            <div className="input-group">
+              <label htmlFor="publicoEsperado">Quantidade de Público Esperado</label>
+              <input type="number" id="publicoEsperado" name="publicoEsperado" value={formData.publicoEsperado} onChange={handleChange} required />
+            </div>
+            <div className="input-group">
+              <label htmlFor="localEvento">Local</label>
+              <input type="text" id="localEvento" name="localEvento" value={formData.localEvento} onChange={handleChange} required />
+            </div>
+            <button type="submit" className="submit-button">Enviar</button>
+          </form>
+          <div className="modal-footer">
+            <h3>Informações de contato</h3>
+            <p><FontAwesomeIcon icon={faEnvelope} /> contato@ticketseller.com.br</p>
+          </div>
+        </div>
+      </div>
 
-      <section className="secao-formulario">
-        <h2>Cadastro de Organizador</h2>
-        <form className="formulario-organizador">
-          <label>
-            Nome do Organizador/Clube*
-            <input type="text" placeholder="Clube de Regatas do Flamengo" required />
-          </label>
-
-          <label>
-            Tipo de Organizador*
-            <select required>
-              <option value="">Selecione</option>
-              <option value="clube">Clube de Futebol</option>
-              <option value="federacao">Federação Estadual</option>
-              <option value="liga">Liga/Associação</option>
-              <option value="empresa">Empresa de Eventos</option>
-              <option value="outros">Outros</option>
-            </select>
-          </label>
-
-          <label>
-            CNPJ*
-            <input type="text" placeholder="00.000.000/0000-00" required />
-          </label>
-
-          <label>
-            Email do Organizador*
-            <input type="email" placeholder="contato@seuclube.com.br" required />
-          </label>
-
-          <label>
-            Telefone*
-            <input type="tel" placeholder="(11) 99999-9999" required />
-          </label>
-
-          <label>
-            Nome do Estádio/Local*
-            <input type="text" placeholder="Maracanã" required />
-          </label>
-
-          <label>
-            Capacidade do Estádio*
-            <input type="number" placeholder="78000" required />
-          </label>
-
-          <label>
-            Estado*
-            <input type="text" placeholder="Rio de Janeiro" required />
-          </label>
-
-          <label>
-            Descrição do Evento
-            <textarea placeholder="Descreva detalhes adicionais sobre o seu evento, informações especiais, etc." />
-          </label>
-
-          <button type="submit" className="botao-enviar">Enviar</button>
-        </form>
-      </section>
+      {showSuccessMessage && (
+        <div className="success-popup">
+          <FontAwesomeIcon icon={faCheckCircle} className="success-icon" />
+          <p>Solicitação enviada com sucesso! Entraremos em contato em breve.</p>
+        </div>
+      )}
     </div>
   );
-};
+}
 
 export default Organizadores;

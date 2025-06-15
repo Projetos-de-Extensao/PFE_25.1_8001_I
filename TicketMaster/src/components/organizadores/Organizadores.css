@@ -1,93 +1,235 @@
-.pagina-organizadores {
-  background-color: #f9fafb;
-  color: #333;
-  font-family: 'Arial', sans-serif;
+/* Container principal da página que centraliza o conteúdo */
+.organizadores-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e9ecef; /* Um cinza claro para o fundo da página */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cabecalho-organizador {
+/* Overlay que cobre a página inteira, simulando o foco no modal */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* O conteúdo do modal em si */
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 35px 40px;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Botão de fechar (X) no canto superior direito */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #adb5bd;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.close-button:hover {
+  color: #495057;
+}
+
+/* Cabeçalho do modal */
+.modal-header {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(to right, #1E3A8A, #06B6D4);
-  color: white;
+  margin-bottom: 25px;
 }
 
-.cabecalho-organizador h1 {
+.header-icon {
   font-size: 2.5rem;
-  font-weight: bold;
+  color: #007bff;
   margin-bottom: 10px;
 }
 
-.cabecalho-organizador p {
-  font-size: 1.125rem;
-  margin-bottom: 20px;
+.modal-header h2 {
+  color: #212529;
+  margin: 0 0 5px 0;
+  font-size: 1.8rem;
 }
 
-.botao-destaque {
-  background-color: white;
-  color: #1E3A8A;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.modal-header p {
+  color: #6c757d;
+  font-size: 1rem;
+  margin: 0;
 }
 
-.botao-destaque:hover {
-  background-color: #e5e7eb;
-}
-
-.secao-formulario {
-  max-width: 800px;
-  margin: auto;
-  padding: 30px;
-}
-
-.secao-formulario h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-.formulario-organizador {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-.formulario-organizador label {
+/* Formulário e seus elementos */
+.modal-form {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
-.formulario-organizador input,
-.formulario-organizador select,
-.formulario-organizador textarea {
-  margin-top: 8px;
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #495057;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
   padding: 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #ced4da;
   border-radius: 6px;
   font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.formulario-organizador textarea {
-  min-height: 120px;
-  resize: none;
+.input-group input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
 
-.botao-enviar {
-  margin-top: 30px;
-  background-color: #1E3A8A;
+/* Wrapper para inputs com ícones internos */
+.date-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  color: #6c757d;
+}
+
+/* Botão de Envio */
+.submit-button {
+  background: linear-gradient(90deg, #007bff, #0056b3);
   color: white;
-  font-weight: bold;
-  padding: 16px 32px;
+  padding: 14px 20px;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
 }
 
-.botao-enviar:hover {
-  background-color: #1D4ED8;
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Rodapé do modal */
+.modal-footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+  border-top: 1px solid #e9ecef;
+  padding-top: 20px;
+}
+
+.modal-footer h3 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.modal-footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Pop-up de sucesso */
+.success-popup {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 2000;
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+  animation: slideIn 0.3s ease-out;
+}
+
+.success-icon {
+  font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ========================================= */
+/* REGRAS DE RESPONSIVIDADE         */
+/* ========================================= */
+
+/* Para telas menores que 600px (maioria dos celulares) */
+@media (max-width: 600px) {
+  /* Reduz o padding geral da página para dar mais espaço ao modal */
+  .organizadores-page-container {
+    padding: 10px;
+  }
+
+  /* Reduz o padding interno do modal */
+  .modal-content {
+    padding: 25px 20px;
+  }
+
+  /* Ajusta o tamanho das fontes do cabeçalho */
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-header p {
+    font-size: 0.9rem;
+  }
+
+  /* Ajusta o tamanho da fonte e o padding do botão principal */
+  .submit-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  /* Faz o pop-up de sucesso ocupar a largura e ficar no topo */
+  .success-popup {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    width: auto; /* A largura se ajustará ao container (com os espaçamentos left/right) */
+  }
 }
