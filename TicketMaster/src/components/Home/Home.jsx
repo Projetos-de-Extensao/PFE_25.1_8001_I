@@ -73,24 +73,17 @@ export default function Home() {
                 <EventCardList events={uniqueEvents} />
             </div>
 
-            <section className="organizer-call fade-up">
-                <h2>Seja um organizador</h2>
-                <p>Quer divulgar seus eventos esportivos para milhares de fãs? Junte-se à nossa plataforma e tenha visibilidade nacional!</p>
-                <Link to="/organizadores" className="organizer-button">
-                    Cadastrar evento
-                </Link>
-            </section>
-
-            <section className="category-showcase fade-up-delay">
-                <h3>Categorias em destaque</h3>
-                <div className="category-grid-large">
-                    {categories.map(cat => (
-                        <div className="category-card-large" key={cat}>
-                            <div className="category-name">{cat}</div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+           <section className="organizer-promo">
+  <h2 className="promo-title">Seja um Organizador</h2>
+  <p className="promo-text">
+    Você é um clube ou organizador de eventos? Venda seus ingressos na maior plataforma de tickets do Brasil.
+  </p>
+  <Link to="/organizadores" className="promo-button">
+    Saiba mais
+  </Link>
+</section>
         </>
+
+
     );
 }
