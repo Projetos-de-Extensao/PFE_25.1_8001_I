@@ -4,6 +4,7 @@ import EventCard from './EventCard/EventCard';
 import './EventCard/EventCard.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from "react-router-dom";
 
 function NextArrow(props) {
     const { className, onClick } = props;
@@ -77,6 +78,17 @@ export default function EventCardList({ events }) {
                             category={event.category}
                             image={event.image}
                         />
+                        <Link
+                            to={`/compra/${event.id}`}
+                            className="buy-button"
+                            style={{
+                                display: "block",
+                                margin: "16px auto 0",
+                                textAlign: "center"
+                            }}
+                        >
+                            Comprar ingresso
+                        </Link>
                     </div>
                 ))}
             </Slider>

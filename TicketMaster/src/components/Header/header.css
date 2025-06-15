@@ -40,13 +40,6 @@
   color: #fff;
 }
 
-.cart-icon {
-  font-size: 1.2rem;
-  color: #0077b6;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
 .cart-icon:hover {
   color: #005f91;
 }
@@ -73,4 +66,30 @@
   .nav-link {
     width: 100%;
   }
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 1.5rem;
+  color: #0077b6;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #e63946;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 20px;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }

@@ -11,27 +11,36 @@ import EventCardList from './components/EventCardList/EventCardList'
 import TelaLogin from './components/Login/Login'
 import Cadastro from './components/Cadastro/Cadastro'
 import Organizadores from './components/Organizadores/Organizadores';
+import Carrinho from './components/Carrinho/Carrinho';
+import PaginaCompra from './components/PaginaCompra/PaginaCompra';
+import { CarrinhoProvider } from "./context/CarrinhoContext";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contato" element={<Contato />} />
-          <Route path="/meusingressos" element={<MeusIngressos />} />
-          <Route path="/login" element={<TelaLogin />} />
-          <Route path="/cadastro" element={<Cadastro />} /> 
-          <Route path="/organizadores" element={<Organizadores />} />    
-        </Routes>
+    <CarrinhoProvider>
+      <BrowserRouter>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/meusingressos" element={<MeusIngressos />} />
+            <Route path="/login" element={<TelaLogin />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/organizadores" element={<Organizadores />} />
+            <Route path="/carrinho" element={<Carrinho />} />
+            <Route path="/paginacompra" element={<PaginaCompra />} />
+            <Route path="/compra/:id" element={<PaginaCompra />} />
+          </Routes>
 
-      </main>
-      <Footer />
-    </BrowserRouter>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </CarrinhoProvider>
   )
+
 }
 
 export default App

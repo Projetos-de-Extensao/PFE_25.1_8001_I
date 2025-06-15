@@ -1,0 +1,168 @@
+.compra-wrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #f5faff 0%, #eaf6fb 100%);
+  padding: 40px 0;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.compra-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 60, 180, 0.08);
+  display: flex;
+  gap: 40px;
+  padding: 38px 38px 38px 48px;
+  max-width: 950px;
+  width: 100%;
+}
+
+.compra-info {
+  flex: 2;
+}
+
+.compra-info h2 {
+  color: #1a3fa6;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.compra-data {
+  color: #4a90e2;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.mapa-estadio {
+  background: #f1f7fd;
+  border-radius: 14px;
+  padding: 28px 18px 18px 18px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setor-cima,
+.setor-baixo {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.setor-meio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 10px;
+}
+
+.setor-mapa {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.setor-mapa.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  min-width: 40px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setor-mapa.ativo {
+  border: 2px solid #2563eb;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+}
+
+.campo {
+  background: #22b573;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 32px 48px;
+  min-width: 120px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.mapa-instrucao {
+  color: #4a90e2;
+  font-size: 0.98rem;
+  margin-top: 12px;
+}
+
+.compra-detalhes {
+  flex: 1;
+  background: #f7faff;
+  border-radius: 12px;
+  padding: 24px 18px;
+  min-width: 260px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.compra-detalhes h3 {
+  color: #1a3fa6;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.compra-detalhes label {
+  display: flex;
+  flex-direction: column;
+  color: #1a3fa6;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.compra-detalhes select {
+  margin-top: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1.5px solid #4a90e2;
+  font-size: 1rem;
+  background: #fff;
+  color: #1a3fa6;
+}
+
+.btn-adicionar {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.btn-adicionar:disabled {
+  background: #bcd2f7;
+  cursor: not-allowed;
+}
+
+.btn-adicionar:not(:disabled):hover {
+  background: #1a3fa6;
+}
