@@ -1,43 +1,207 @@
 .ingressos-container {
-  background-color: #1D4ED8; /* Cor principal */
-  color: white;
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  padding: 40px 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.header h1 {
+.header-ingressos {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1a237e;
+}
+
+.header-ingressos h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.ingresso-info {
-  background-color: #2D3748; /* Cor de fundo do conteúdo */
+.header-ingressos p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.ingresso-card {
+  background: white;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.ingresso-card:hover {
+  transform: translateY(-5px);
+}
+
+.ingresso-header {
+  background: linear-gradient(to right, #1a237e, #0077b6);
   padding: 20px;
-  border-radius: 10px;
-  width: 60%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.partida, .estadio, .dados-pessoais {
-  margin-bottom: 20px;
+.status-tag {
+  background: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-h2, h3, h4 {
+.evento-data {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.evento-data svg {
+  margin-right: 5px;
+}
+
+.ingresso-content {
+  padding: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.evento-info {
+  margin-bottom: 25px;
+}
+
+.evento-info h2 {
   font-size: 1.8rem;
+  color: #1a237e;
+  margin-bottom: 10px;
 }
 
-p {
+.evento-tipo {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.evento-local {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0077b6;
+  font-size: 1.1rem;
+}
+
+.ingresso-details {
+  display: flex;
+  gap: 40px;
+  margin: 25px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.details-column {
+  flex: 1;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+}
+
+.detail-label {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.detail-value {
+  color: #1a237e;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ingresso-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.titular-info h4 {
+  color: #1a237e;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.titular-info p {
+  color: #666;
+}
+
+.pedido-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+}
+
+.ticket-icon {
+  color: #0077b6;
   font-size: 1.2rem;
 }
 
-.codigo-qr img {
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
+.ingresso-actions {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  background: #f8fafc;
+}
+
+.action-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button.download {
+  background: #0077b6;
+  color: white;
+}
+
+.action-button.download:hover {
+  background: #005f91;
+}
+
+.action-button.share {
+  background: #e0e7ff;
+  color: #1a237e;
+}
+
+.action-button.share:hover {
+  background: #c7d2fe;
+}
+
+@media (max-width: 768px) {
+  .ingresso-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ingresso-footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .ingresso-actions {
+    flex-direction: column;
+  }
 }

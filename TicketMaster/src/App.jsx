@@ -8,6 +8,8 @@ import Contato from './components/Contato/Contato'
 import MeusIngressos from './components/MeusIngressos/MeusIngressos'
 import games from './data/games.json'
 import EventCardList from './components/EventCardList/EventCardList'
+import TelaLogin from './components/Login/Login'
+import Cadastro from './components/Cadastro/Cadastro'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/meusingressos" element={<MeusIngressos />} />
+          <Route path="/login" element={<TelaLogin />} />
+          <Route path="/cadastro" element={<Cadastro />} /> {/* Nova rota */}
         </Routes>
       </main>
       <Footer />
