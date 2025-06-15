@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './home.css';
 import EventCardList from '../EventCardList/EventCardList';
 import games from '../../data/games.json';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const [search, setSearch] = useState('');
@@ -75,12 +76,9 @@ export default function Home() {
             <section className="organizer-call fade-up">
                 <h2>Seja um organizador</h2>
                 <p>Quer divulgar seus eventos esportivos para milhares de fãs? Junte-se à nossa plataforma e tenha visibilidade nacional!</p>
-                <button
-                    className="organizer-button"
-                    onClick={() => window.location.href = '/organizadores'}
-                >
+                <Link to="/organizadores" className="organizer-button">
                     Cadastrar evento
-                </button>
+                </Link>
             </section>
 
             <section className="category-showcase fade-up-delay">

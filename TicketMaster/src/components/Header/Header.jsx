@@ -12,6 +12,7 @@ export default function Header() {
         <Link to="/meusingressos" className="nav-link">Ingressos</Link>
         <Link to="/contato" className="nav-link">Contato</Link>
         <Link to="/login" className="nav-link">Login</Link> {/* <-- Adicione esta linha */}
+        
         <span className="cart-icon">🛒</span>
       </nav>
     </header>
