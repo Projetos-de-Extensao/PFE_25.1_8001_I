@@ -14,6 +14,8 @@ import Organizadores from './components/Organizadores/Organizadores';
 import Carrinho from './components/Carrinho/Carrinho';
 import PaginaCompra from './components/PaginaCompra/PaginaCompra';
 import { CarrinhoProvider } from "./context/CarrinhoContext";
+import Paginacheckout from './components/PaginaCheckout/PaginaCheckout';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +35,7 @@ function App() {
             <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/paginacompra" element={<PaginaCompra />} />
             <Route path="/compra/:id" element={<PaginaCompra />} />
+             <Route path="/checkout" element={<Paginacheckout />} />
           </Routes>
 
         </main>
