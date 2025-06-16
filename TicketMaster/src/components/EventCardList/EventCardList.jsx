@@ -57,8 +57,9 @@ export default function EventCardList({ events }) {
                         <EventCard
                             title={event.title}
                             date={event.date}
-                            category={event.category}
+                            category={event.category || event.categoria}
                             image={event.image}
+                            estadio={event.estadio} // <-- Adicionado aqui!
                         />
                         <Link
                             to={`/compra/${event.id}`}

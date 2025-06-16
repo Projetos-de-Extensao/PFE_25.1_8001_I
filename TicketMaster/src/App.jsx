@@ -17,10 +17,12 @@ import { CarrinhoProvider } from "./context/CarrinhoContext";
 import Paginacheckout from './components/PaginaCheckout/PaginaCheckout';
 
 
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
+
     <CarrinhoProvider>
       <BrowserRouter>
         <Header />
@@ -35,14 +37,16 @@ function App() {
             <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/paginacompra" element={<PaginaCompra />} />
             <Route path="/compra/:id" element={<PaginaCompra />} />
-             <Route path="/checkout" element={<Paginacheckout />} />
+            <Route path="/checkout" element={<Paginacheckout />} />
           </Routes>
 
         </main>
         <Footer />
       </BrowserRouter>
     </CarrinhoProvider>
+
   )
+
 
 }
 

@@ -21,9 +21,10 @@ const Carrinho = () => {
           <div>
             <ul className="carrinho-lista">
               {itens.map((item, idx) => (
-                <li className="carrinho-item" key={item.id}>
+                <li className="carrinho-item" key={item.id + '-' + idx}>
                   <div>
                     <strong>{item.titulo}</strong>
+                    <p>Estádio: {item.estadio}</p>
                     <p>{item.data} - {item.local}</p>
                     <p>Setor: {item.setor} | Fileira: {item.fileira} | Assento: {item.assento}</p>
                     <p>Preço: R$ {item.preco}</p>

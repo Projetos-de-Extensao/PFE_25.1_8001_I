@@ -4,69 +4,89 @@
     "title": "Palmeiras vs Flamengo",
     "category": "Brasileirão",
     "date": "2025-06-20",
+    "estadio": "Allianz Parque",
     "image": "/images/palmeiras-vs-flamengo.png"
+    
   },
   {
     "id": 2,
     "title": "Corinthians vs São Paulo",
     "category": "Brasileirão",
     "date": "2025-06-22",
+    "estadio": "Neo Química Arena",
     "image": "/images/corinthians-vs-sao-paulo.png"
+    
   },
   {
     "id": 3,
     "title": "Vasco vs Botafogo",
     "category": "Estaduais",
     "date": "2025-06-25",
+    "estadio": "São Januário Stadium",
     "image": "/images/vasco-vs-botafogo.png"
+    
   },
   {
     "id": 4,
     "title": "Grêmio vs Internacional",
     "category": "Copa do Brasil",
     "date": "2025-06-28",
+    "estadio": "Arena do Grêmio",
     "image": "/images/gremio-vs-internacional.png"
+    
   },
   {
     "id": 5,
     "title": "Atlético-MG vs Cruzeiro",
     "category": "Estaduais",
     "date": "2025-06-29",
+    "estadio": "Mineirão Stadium",
     "image": "/images/atletico-mg-vs-cruzeiro.png"
+    
   },
   {
     "id": 6,
     "title": "Santos vs Palmeiras",
     "category": "Brasileirão",
     "date": "2025-07-01",
+    "estadio": "Vila Belmiro Stadium",
     "image": "/images/santos-vs-palmeiras.png"
+    
   },
   {
     "id": 7,
     "title": "Fluminense vs Flamengo",
     "category": "Libertadores",
     "date": "2025-07-03",
+    "estadio": "Maracanã Stadium",
     "image": "/images/fluminense-vs-flamengo.png"
+    
   },
   {
     "id": 8,
     "title": "Bahia vs Vitória",
     "category": "Estaduais",
     "date": "2025-07-04",
+    "estadio": "Arena Fonte Nova",
     "image": "/images/bahia-vs-vitoria.png"
+    
   },
   {
     "id": 9,
     "title": "Athletico-PR vs Coritiba",
     "category": "Copa do Brasil",
     "date": "2025-07-05",
+    "estadio": "Arena da Baixada",
     "image": "/images/athletico-pr-vs-coritiba.png"
+    
   },
   {
     "id": 10,
     "title": "São Paulo vs Santos",
     "category": "Brasileirão",
     "date": "2025-07-07",
+    "estadio": "Morumbi Stadium",
     "image": "/images/sao-paulo-vs-santos.png"
+    
   }
 ]

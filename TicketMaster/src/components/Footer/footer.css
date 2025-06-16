@@ -131,6 +131,7 @@
 .footer-cards .fa-cc-mastercard {
   background: linear-gradient(to right, #ff5f00, #f79e1b, #eb001b);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -138,7 +139,7 @@
 .footer-cards .fa-cc-amex {
   color: #2e77bb;
   font-size: 1.8rem;
-}
+} 
 
 
 .footer-cards .fa-cc-paypal {

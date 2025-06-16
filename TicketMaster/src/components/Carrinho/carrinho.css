@@ -24,12 +24,14 @@
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 60, 180, 0.08);
-  padding: 60px 32px 60px 32px; /* aumenta o padding superior e inferior */
+  padding: 60px 32px 60px 32px;
+  /* aumenta o padding superior e inferior */
   min-width: 350px;
   max-width: 480px;
   margin: 0 auto;
   text-align: center;
-  min-height: 520px; /* aumenta a altura mínima */
+  min-height: 520px;
+  /* aumenta a altura mínima */
   transition: min-height 0.3s;
 }
 
@@ -54,12 +56,12 @@
   font-size: 1.05rem;
   transition: background 0.2s, box-shadow 0.2s;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
 }
 
 .btn-continuar:hover {
   background: linear-gradient(90deg, #1a3fa6 60%, #2563eb 100%);
-  box-shadow: 0 4px 16px rgba(37,99,235,0.12);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
 }
 
 .carrinho-lista {
@@ -78,7 +80,8 @@
   padding: 36px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinha o conteúdo e o botão ao topo */
+  align-items: flex-start;
+  /* Alinha o conteúdo e o botão ao topo */
   box-shadow: 0 2px 12px rgba(37, 99, 235, 0.10);
   position: relative;
   margin-bottom: 0;
@@ -87,10 +90,11 @@
   min-height: 120px;
 }
 
-.carrinho-item > div {
+.carrinho-item>div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Garante alinhamento à esquerda */
+  align-items: flex-start;
+  /* Garante alinhamento à esquerda */
   flex: 1;
   min-width: 0;
 }
@@ -115,7 +119,8 @@
 }
 
 .carrinho-item button.btn-remover {
-  align-self: flex-end; /* botão vai para o topo à direita */
+  align-self: flex-end;
+  /* botão vai para o topo à direita */
   margin-left: 24px;
   margin-top: 4px;
 }
@@ -132,13 +137,15 @@
 }
 
 .carrinho-item:hover {
-  background: #2563eb; /* azul mais suave */
+  background: #2563eb;
+  /* azul mais suave */
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
 }
 
 .carrinho-item:hover strong,
 .carrinho-item:hover p {
-  color: #fff; /* texto branco para contraste */
+  color: #fff;
+  /* texto branco para contraste */
 }
 
 .btn-remover {
@@ -156,7 +163,7 @@
 .btn-remover:hover {
   background: #e63946;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(230,57,70,0.13);
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.13);
 }
 
 /* Responsivo para telas menores */
@@ -166,10 +173,12 @@
     max-width: 98vw;
     padding: 24px 8px;
   }
+
   .carrinho-pagina {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
   .carrinho-pagina h1 {
     font-size: 1.4rem;
   }
