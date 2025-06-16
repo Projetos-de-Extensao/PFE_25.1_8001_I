@@ -56,22 +56,29 @@
 }
 
 .buy-button {
-  margin-top: auto;
-  padding: 8px 20px;     
+  margin: 20px auto 10px;
+  padding: 14px 24px;
   background-color: #0077b6;
   color: white;
   border: none;
-  border-radius: 4px;       
-  font-weight: 500;
-  font-size: 0.95rem;    
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  max-width: 80%;
+  font-family: 'Inter', sans-serif; 
+  text-decoration: none; 
+  text-align: center;
 }
 
 .buy-button:hover {
   background-color: #023e8a;
+  transform: scale(1.03);
 }
+
+
 
 
 
