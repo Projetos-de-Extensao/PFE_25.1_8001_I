@@ -15,34 +15,38 @@ import Carrinho from './components/Carrinho/Carrinho';
 import PaginaCompra from './components/PaginaCompra/PaginaCompra';
 import { CarrinhoProvider } from "./context/CarrinhoContext";
 import Paginacheckout from './components/PaginaCheckout/PaginaCheckout';
+import { IngressosProvider } from "./context/IngressosContext";
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <CarrinhoProvider>
-      <BrowserRouter>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/meusingressos" element={<MeusIngressos />} />
-            <Route path="/login" element={<TelaLogin />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/organizadores" element={<Organizadores />} />
-            <Route path="/carrinho" element={<Carrinho />} />
-            <Route path="/paginacompra" element={<PaginaCompra />} />
-            <Route path="/compra/:id" element={<PaginaCompra />} />
-             <Route path="/checkout" element={<Paginacheckout />} />
-          </Routes>
+    <IngressosProvider>
+      <CarrinhoProvider>
+        <BrowserRouter>
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contato" element={<Contato />} />
+              <Route path="/meusingressos" element={<MeusIngressos />} />
+              <Route path="/login" element={<TelaLogin />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/organizadores" element={<Organizadores />} />
+              <Route path="/carrinho" element={<Carrinho />} />
+              <Route path="/paginacompra" element={<PaginaCompra />} />
+              <Route path="/compra/:id" element={<PaginaCompra />} />
+              <Route path="/checkout" element={<Paginacheckout />} />
+            </Routes>
 
-        </main>
-        <Footer />
-      </BrowserRouter>
-    </CarrinhoProvider>
+          </main>
+          <Footer />
+        </BrowserRouter>
+      </CarrinhoProvider>
+    </IngressosProvider>
   )
+
 
 }
 

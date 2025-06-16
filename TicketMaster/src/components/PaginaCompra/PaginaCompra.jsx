@@ -35,13 +35,15 @@ export default function PaginaCompra() {
       return;
     }
     adicionarItem({
+      id: evento.id,
       titulo: evento.title,
       data: evento.date,
-      local: evento.local,
-      setor: setorSelecionado.nome,
+      categoria: evento.categoria,
+      setor: setorSelecionado.nome,      
       fileira,
       assento,
-      preco: setorSelecionado.preco,
+      preco: setorSelecionado.preco,     
+      estadio: evento.estadio            
     });
     alert("Ingresso adicionado ao carrinho!");
   }
