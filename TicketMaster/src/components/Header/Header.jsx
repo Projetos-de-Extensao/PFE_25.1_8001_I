@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="main-header">
-      <div className="logo">🎟️ TicketSeller</div>
+      <Link to="/" className="logo">🎟️ TicketSeller</Link>
       <nav className="nav-links">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/organizadores" className="nav-link">Organizadores</Link>
