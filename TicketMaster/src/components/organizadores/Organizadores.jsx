@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Organizadores.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// REMOVIDO: O ícone 'faTimes' não é mais necessário
 import { faCalendarAlt, faBuilding, faEnvelope, faPhone, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Organizadores() {
@@ -44,53 +43,102 @@ function Organizadores() {
     }, 3000);
   };
 
-  // REMOVIDO: A função handleClose não é mais necessária
-  // const handleClose = () => { ... };
-
   return (
     <div className="organizadores-page-container">
       <div className="modal-overlay">
         <div className="modal-content">
-          
-          {/* REMOVIDO: O botão de fechar (X) que estava aqui foi apagado */}
-
           <div className="modal-header">
             <FontAwesomeIcon icon={faBuilding} className="header-icon" />
             <h2>Venda ingressos online</h2>
             <p>Se você está buscando parcerias ou soluções para o seu evento, preencha os dados abaixo.</p>
           </div>
           <form onSubmit={handleSubmit} className="modal-form">
-            {/* O resto do seu formulário permanece igual... */}
             <div className="input-group">
               <label htmlFor="nomeEmpresa">Nome da empresa</label>
-              <input type="text" id="nomeEmpresa" name="nomeEmpresa" value={formData.nomeEmpresa} onChange={handleChange} required />
+              <input
+                type="text"
+                id="nomeEmpresa"
+                name="nomeEmpresa"
+                value={formData.nomeEmpresa}
+                onChange={handleChange}
+                required
+                placeholder="Ex: Ticket Seller LTDA"
+              />
             </div>
             <div className="input-group">
               <label htmlFor="nomeEvento">Nome do evento</label>
-              <input type="text" id="nomeEvento" name="nomeEvento" value={formData.nomeEvento} onChange={handleChange} required />
+              <input
+                type="text"
+                id="nomeEvento"
+                name="nomeEvento"
+                value={formData.nomeEvento}
+                onChange={handleChange}
+                required
+                placeholder="Ex: Festival de Música 2025"
+              />
             </div>
             <div className="input-group">
               <label htmlFor="emailContato">E-mail para contato</label>
-              <input type="email" id="emailContato" name="emailContato" value={formData.emailContato} onChange={handleChange} required />
+              <input
+                type="email"
+                id="emailContato"
+                name="emailContato"
+                value={formData.emailContato}
+                onChange={handleChange}
+                required
+                placeholder="Ex: contato@empresa.com"
+              />
             </div>
             <div className="input-group">
               <label htmlFor="telefoneContato">Telefone para contato</label>
-              <input type="tel" id="telefoneContato" name="telefoneContato" value={formData.telefoneContato} onChange={handleChange} required />
+              <input
+                type="tel"
+                id="telefoneContato"
+                name="telefoneContato"
+                value={formData.telefoneContato}
+                onChange={handleChange}
+                required
+                placeholder="Ex: (11) 91234-5678"
+              />
             </div>
             <div className="input-group">
               <label htmlFor="dataEvento">Data</label>
               <div className="date-input-wrapper">
-                <input type="text" id="dataEvento" name="dataEvento" placeholder="dd/mm/aaaa" value={formData.dataEvento} onChange={handleChange} required />
+                <input
+                  type="text"
+                  id="dataEvento"
+                  name="dataEvento"
+                  placeholder="dd/mm/aaaa"
+                  value={formData.dataEvento}
+                  onChange={handleChange}
+                  required
+                />
                 <FontAwesomeIcon icon={faCalendarAlt} className="input-icon" />
               </div>
             </div>
             <div className="input-group">
               <label htmlFor="publicoEsperado">Quantidade de Público Esperado</label>
-              <input type="number" id="publicoEsperado" name="publicoEsperado" value={formData.publicoEsperado} onChange={handleChange} required />
+              <input
+                type="number"
+                id="publicoEsperado"
+                name="publicoEsperado"
+                value={formData.publicoEsperado}
+                onChange={handleChange}
+                required
+                placeholder="Ex: 500"
+              />
             </div>
             <div className="input-group">
               <label htmlFor="localEvento">Local</label>
-              <input type="text" id="localEvento" name="localEvento" value={formData.localEvento} onChange={handleChange} required />
+              <input
+                type="text"
+                id="localEvento"
+                name="localEvento"
+                value={formData.localEvento}
+                onChange={handleChange}
+                required
+                placeholder="Ex: Centro de Convenções"
+              />
             </div>
             <button type="submit" className="submit-button">Enviar</button>
           </form>
