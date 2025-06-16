@@ -1,46 +1,62 @@
+/* Importando uma fonte que se assemelha à da imagem */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
 .compra-wrapper {
   min-height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background: linear-gradient(135deg, #f5faff 0%, #eaf6fb 100%);
-  padding: 40px 0;
+  align-items: center; /* Centraliza verticalmente o card */
+  background: #eef5ff; /* Fundo azul bem claro, como na imagem */
+  padding: 60px 20px;
   font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .compra-card {
   background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0, 60, 180, 0.08);
+  border-radius: 24px; /* Aumentado */
+  box-shadow: 0 10px 40px rgba(0, 82, 204, 0.1); /* Sombra mais suave */
   display: flex;
-  gap: 40px;
-  padding: 38px 38px 38px 48px;
-  max-width: 950px;
+  gap: 50px; /* Aumentado */
+  padding: 50px; /* Aumentado */
+  max-width: 1100px; /* Aumentado */
   width: 100%;
 }
 
 .compra-info {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo do mapa */
 }
 
 .compra-info h2 {
-  color: #1a3fa6;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 6px;
+  color: #0d2b67;
+  font-size: 2.5rem; /* Aumentado */
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 2px;
 }
 
 .compra-data {
-  color: #4a90e2;
-  font-size: 1.05rem;
-  margin-bottom: 18px;
+  color: #506a9c;
+  font-size: 1.1rem; /* Aumentado */
+  margin-bottom: 15px;
+}
+
+.compra-info h3 {
+  color: #0d2b67;
+  font-size: 1rem;
+  font-weight: 400; /* Mais leve como na imagem "Mapa do Estádio" */
+  margin-bottom: 20px;
 }
 
 .mapa-estadio {
-  background: #f1f7fd;
-  border-radius: 14px;
-  padding: 28px 18px 18px 18px;
-  margin-bottom: 10px;
+  background: #f7faff; /* Fundo interno um pouco mais claro */
+  border-radius: 16px; /* Aumentado */
+  padding: 30px; /* Aumentado */
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,119 +66,132 @@
 .setor-baixo {
   display: flex;
   justify-content: center;
-  gap: 18px;
-  margin-bottom: 10px;
+  gap: 20px; /* Aumentado */
+  margin-bottom: 15px; /* Aumentado */
 }
 
 .setor-meio {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  margin-bottom: 10px;
+  gap: 15px; /* Reduzido para aproximar os setores do campo */
+  margin-bottom: 15px; /* Aumentado */
 }
 
 .setor-mapa {
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 12px 24px; /* Aumentado */
+  border-radius: 10px; /* Aumentado */
+  font-weight: 700;
+  font-size: 1.05rem; /* Aumentado */
   cursor: pointer;
-  border: 2px solid transparent;
-  transition: border 0.2s, box-shadow 0.2s;
-  margin-bottom: 0;
+  border: 3px solid transparent; /* Bordas mais grossas para o estado ativo */
+  transition: all 0.2s ease-in-out;
   text-align: center;
+  color: #333; /* Cor padrão para texto de camarote */
 }
 
 .setor-mapa.vertical {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  min-width: 40px;
-  min-height: 120px;
+  padding: 24px 12px; /* Invertido para o modo vertical */
+  min-height: 180px; /* Aumentado */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .setor-mapa.ativo {
-  border: 2px solid #2563eb;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  border-color: #2563eb;
+  transform: scale(1.03); /* Efeito de zoom sutil ao selecionar */
 }
 
 .campo {
-  background: #22b573;
+  background: #22c55e; /* Verde mais vibrante */
   color: #fff;
-  font-weight: 700;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  padding: 32px 48px;
-  min-width: 120px;
+  font-weight: 800;
+  font-size: 1.5rem; /* Aumentado */
+  border-radius: 12px; /* Aumentado */
+  padding: 50px 70px; /* Aumentado */
   text-align: center;
   margin: 0 10px;
 }
 
 .mapa-instrucao {
-  color: #4a90e2;
-  font-size: 0.98rem;
-  margin-top: 12px;
+  color: #506a9c;
+  font-size: 1rem; /* Aumentado */
+  margin-top: 20px; /* Aumentado */
 }
 
+/* Coluna da Direita: Detalhes da Seleção */
 .compra-detalhes {
   flex: 1;
   background: #f7faff;
-  border-radius: 12px;
-  padding: 24px 18px;
-  min-width: 260px;
-  max-width: 320px;
+  border-radius: 16px; /* Aumentado */
+  padding: 35px 30px; /* Aumentado */
+  min-width: 320px; /* Aumentado */
+  max-width: 360px; /* Aumentado */
   display: flex;
   flex-direction: column;
-  gap: 18px;
 }
 
 .compra-detalhes h3 {
-  color: #1a3fa6;
-  font-size: 1.15rem;
+  color: #0d2b67;
+  font-size: 1.4rem; /* Aumentado */
   font-weight: 700;
-  margin-bottom: 12px;
+  margin: 0 0 30px 0; /* Aumentado margin bottom */
+  text-align: center;
 }
 
 .compra-detalhes label {
   display: flex;
   flex-direction: column;
-  color: #1a3fa6;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  color: #0d2b67;
+  font-weight: 600;
+  font-size: 1.1rem; /* Aumentado */
+  margin-bottom: 25px; /* Aumentado */
 }
 
 .compra-detalhes select {
-  margin-top: 6px;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1.5px solid #4a90e2;
-  font-size: 1rem;
+  margin-top: 10px; /* Aumentado */
+  padding: 14px; /* Aumentado */
+  border-radius: 8px; /* Aumentado */
+  border: 1.5px solid #cdd5e3;
+  font-size: 1.1rem; /* Aumentado */
   background: #fff;
-  color: #1a3fa6;
+  color: #0d2b67;
+  -webkit-appearance: none; /* Custom dropdown arrow */
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%208l5%205%205-5z%22%20fill%3D%22%23506a9c%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 20px auto;
 }
 
 .btn-adicionar {
+  background: #d4e2fc; /* Cor desabilitada da imagem */
+  color: #7b9ce2; /* Cor do texto desabilitado */
+  border: none;
+  border-radius: 10px; /* Aumentado */
+  padding: 18px 0; /* Aumentado */
+  font-size: 1.15rem; /* Aumentado */
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px; /* Aumentado */
+  transition: all 0.2s ease-in-out;
+}
+
+/* O botão só fica ativo quando não está desabilitado */
+.btn-adicionar:not(:disabled) {
   background: #2563eb;
   color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 0;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 12px;
-  transition: background 0.2s;
 }
 
 .btn-adicionar:disabled {
-  background: #bcd2f7;
   cursor: not-allowed;
 }
 
 .btn-adicionar:not(:disabled):hover {
   background: #1a3fa6;
+  transform: translateY(-2px); /* Efeito de elevação */
+  box-shadow: 0 4px 12px rgba(37,99,235,0.2);
 }
