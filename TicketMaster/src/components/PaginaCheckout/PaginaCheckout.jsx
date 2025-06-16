@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Paginacheckout.css";
+import { useCarrinho } from "../../context/CarrinhoContext";
 
 function Paginacheckout() {
-  const [pedido] = useState({
-    preco: 89.90,
-  });
+  const { itens } = useCarrinho();
+
+  // Calcula o total dos itens do carrinho
+  const total = itens.reduce((sum, item) => sum + Number(item.preco), 0);
 
   const formatPrice = (price) =>
     price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -110,6 +112,21 @@ function Paginacheckout() {
           </div>
         </div>
 
+        {/* Resumo dos ingressos */}
+        <div className="form-section" style={{ marginBottom: 16 }}>
+          <h2>Resumo do Pedido</h2>
+          <ul>
+            {itens.map((item, idx) => (
+              <li key={idx}>
+                {item.titulo} - Setor: {item.setor} - Fileira: {item.fileira} - Assento: {item.assento} - <strong>{formatPrice(item.preco)}</strong>
+              </li>
+            ))}
+          </ul>
+          <div style={{ marginTop: 8, fontWeight: "bold" }}>
+            Total: {formatPrice(total)}
+          </div>
+        </div>
+
         {/* Botão Finalizar */}
         <div style={{ marginTop: 24 }}>
           <button
@@ -117,7 +134,7 @@ function Paginacheckout() {
             className="submit-button"
             style={{ width: "100%" }}
           >
-            Finalizar Compra - {formatPrice(pedido.preco)}
+            Finalizar Compra - {formatPrice(total)}
           </button>
         </div>
       </form>

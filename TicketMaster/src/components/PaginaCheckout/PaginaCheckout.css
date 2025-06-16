@@ -76,3 +76,30 @@
 .submit-button:hover {
   background: #004fa3;
 }
+
+.resumo-pedido {
+  background: #f5f7fa;
+  border-radius: 8px;
+  padding: 18px 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(40, 53, 147, 0.04);
+}
+
+.resumo-pedido ul {
+  list-style: disc inside;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.resumo-pedido li {
+  font-size: 1rem;
+  color: #283593;
+  margin-bottom: 4px;
+}
+
+.resumo-pedido .total {
+  font-weight: bold;
+  color: #0066d6;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
