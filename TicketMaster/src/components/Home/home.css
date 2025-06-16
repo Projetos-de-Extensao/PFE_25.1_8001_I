@@ -8,12 +8,11 @@ body {
   min-height: 100vh;
 }
 
-/* Banner do topo com imagem centralizada e texto centralizado */
 .banner-container {
   height: 300px;
   width: 88%;
   margin: 40px auto;
-  background-image: url('/images/banner.png'); /* atualize o caminho se necessário */
+  background-image: url('/images/banner.png');
   background-size: cover;
   background-position: center;
   border-radius: 18px;
@@ -45,49 +44,57 @@ body {
   margin: 0;
 }
 
-/* Container principal */
 .home-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* Barra de filtros */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
   margin-bottom: 40px;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  animation: fadeInUp 0.8s ease;
+  transition: all 0.3s ease;
 }
 
 .filter-bar input,
 .filter-bar select {
-  padding: 12px;
+  padding: 12px 16px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
   outline: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
-  min-width: 180px;
+  background-color: #f9f9f9;
+  color: #333;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .filter-bar input:focus,
 .filter-bar select:focus {
   border-color: #0077b6;
-  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.2);
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
 }
 
-/* Seção do organizador */
+.filter-bar input:hover,
+.filter-bar select:hover {
+  background-color: #f4faff;
+  border-color: #b3e0f9;
+}
+
 .home-organizer {
   margin-top: 60px;
 }
 
-/* Animação do texto */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -99,7 +106,6 @@ body {
   }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .banner-container {
     height: 220px;

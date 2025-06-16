@@ -32,13 +32,7 @@ export default function Home() {
         <form className="filter-bar">
           <input
             type="text"
-            placeholder="Buscar por título..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Time..."
+            placeholder="Busque por Time..."
             value={team}
             onChange={e => setTeam(e.target.value)}
           />
@@ -48,7 +42,7 @@ export default function Home() {
             onChange={e => setDate(e.target.value)}
           />
           <select value={category} onChange={e => setCategory(e.target.value)}>
-            <option value="Todas">Todas</option>
+            <option value="Todas">Todas Categorias</option>
             <option value="Brasileirão">Brasileirão</option>
             <option value="Copa do Brasil">Copa do Brasil</option>
             <option value="Libertadores">Libertadores</option>
