@@ -132,13 +132,13 @@
 }
 
 .carrinho-item:hover {
-  background: #1a3fa6 !important; /* força o azul escuro */
+  background: #2563eb; /* azul mais suave */
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
 }
 
-.carrinho-item:hover {
-  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.18);
-  background: #fff3cd;
+.carrinho-item:hover strong,
+.carrinho-item:hover p {
+  color: #fff; /* texto branco para contraste */
 }
 
 .btn-remover {
