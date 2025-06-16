@@ -36,6 +36,11 @@
   min-width: 180px; 
 }
 
+/* Espaçamento entre os links */
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
 /* Coluna Social */
 .footer-social {
   flex: 1;
