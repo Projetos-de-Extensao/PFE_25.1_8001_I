@@ -6,45 +6,27 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-router-dom";
 
-function NextArrow(props) {
-    const { className, onClick } = props;
+function NextArrow({ onClick }) {
     return (
         <div
-            className={className}
-            style={{
-                ...arrowStyle,
-                right: '10px'
-            }}
+            className="custom-arrow next"
             onClick={onClick}
-        />
+        >
+            ❯
+        </div>
     );
 }
 
-function PrevArrow(props) {
-    const { className, onClick } = props;
+function PrevArrow({ onClick }) {
     return (
         <div
-            className={className}
-            style={{
-                ...arrowStyle,
-                left: '10px'
-            }}
+            className="custom-arrow prev"
             onClick={onClick}
-        />
+        >
+            ❮
+        </div>
     );
 }
-
-const arrowStyle = {
-    zIndex: 10,
-    width: '30px',
-    height: '30px',
-    backgroundColor: '#0077b6',
-    borderRadius: '50%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#fff'
-};
 
 export default function EventCardList({ events }) {
     const settings = {

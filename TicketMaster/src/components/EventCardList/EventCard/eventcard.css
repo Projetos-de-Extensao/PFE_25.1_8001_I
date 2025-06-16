@@ -1,54 +1,110 @@
+.event-card-carousel {
+  padding: 40px 0;
+}
+
+
+.event-card-wrapper {
+  padding: 0 16px;
+}
+
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
+
 .event-card {
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 360px; 
+  margin: auto;/* Card maior */
 }
 
 .event-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .event-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .event-info {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .event-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: #111;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #111;
 }
 
 .event-info p {
-    margin: 4px 0;
-    font-size: 0.95rem;
-    color: #555;
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 .buy-button {
-    margin-top: auto;
-    padding: 10px;
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  margin-top: auto;
+  padding: 8px 20px;     
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 4px;       
+  font-weight: 500;
+  font-size: 0.95rem;    
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .buy-button:hover {
-    background-color: #023e8a;
+  background-color: #023e8a;
+}
+
+
+
+.slick-prev::before,
+.slick-next::before {
+  color: #0077b6;
+  font-size: 32px;
+}
+.custom-arrow {
+  background-color: #0077b6;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: #005f8e;
+}
+
+.custom-arrow.prev {
+  left: -50px;
+}
+
+.custom-arrow.next {
+  right: -50px;
 }
