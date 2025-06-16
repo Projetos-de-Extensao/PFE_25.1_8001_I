@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Paginacheckout.css";
 import { useCarrinho } from "../../context/CarrinhoContext";
 
 function Paginacheckout() {
   const { itens } = useCarrinho();
+  const [formErrors, setFormErrors] = useState({});
 
   // Calcula o total dos itens do carrinho
   const total = itens.reduce((sum, item) => sum + Number(item.preco), 0);
@@ -11,25 +12,31 @@ function Paginacheckout() {
   const formatPrice = (price) =>
     price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Compra finalizada com sucesso!");
+  };
+
   return (
     <div className="checkout-container">
-      <form className="checkout-form">
+      <form className="checkout-form" onSubmit={handleSubmit}>
         {/* Dados Pessoais */}
         <div className="form-section" style={{ marginBottom: 16 }}>
-          <h2>
-            <span role="img" aria-label="user" style={{ marginRight: 8 }}>
-              <i className="fa-regular fa-user"></i>
-            </span>
-            Dados Pessoais
-          </h2>
+          <h2>Dados Pessoais</h2>
           <div className="form-row">
             <div className="form-group">
               <label>Nome Completo *</label>
-              <input type="text" placeholder="Nome Completo" required />
+              <input
+                type="text"
+                placeholder="Nome Completo"
+                pattern="[A-Za-zÀ-ÿ\s]+" /* Aceita apenas letras e espaços */
+                title="Por favor, insira apenas letras." /* Mensagem de erro personalizada */
+                required
+              />
             </div>
             <div className="form-group">
               <label>E-mail *</label>
-              <input type="email" placeholder="E-mail" required />
+              <input type="email" name="email" placeholder="E-mail" required />
             </div>
           </div>
           <div className="form-row">
@@ -39,19 +46,21 @@ function Paginacheckout() {
             </div>
             <div className="form-group">
               <label>CPF *</label>
-              <input type="text" placeholder="000.000.000-00" required />
+              <input
+                type="text"
+                name="cpf"
+                placeholder="000.000.000-00"
+                maxLength="14"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" /* Aceita apenas números */
+                required
+              />
             </div>
           </div>
         </div>
 
         {/* Endereço de Cobrança */}
         <div className="form-section" style={{ marginBottom: 16 }}>
-          <h2>
-            <span role="img" aria-label="map" style={{ marginRight: 8 }}>
-              <i className="fa-regular fa-map"></i>
-            </span>
-            Endereço de Cobrança
-          </h2>
+          <h2>Endereço de Cobrança</h2>
           <div className="form-row">
             <div className="form-group">
               <label>CEP</label>
@@ -86,45 +95,62 @@ function Paginacheckout() {
 
         {/* Dados do Cartão */}
         <div className="form-section">
-          <h2>
-            <span role="img" aria-label="cartão" style={{ marginRight: 8 }}>
-              <i className="fa-regular fa-credit-card"></i>
-            </span>
-            Dados do Cartão
-          </h2>
+          <h2>Dados do Cartão</h2>
           <div className="form-group">
             <label>Número do Cartão *</label>
-            <input type="text" placeholder="0000 0000 0000 0000" required />
+            <input
+              type="text"
+              name="cardNumber"
+              placeholder="0000 0000 0000 0000"
+              maxLength="16"
+              pattern="\d{4} \d{4} \d{4} \d{4}" /* Aceita apenas números */
+              required
+            />
           </div>
           <div className="form-group">
             <label>Nome no Cartão *</label>
-            <input type="text" placeholder="Nome como impresso no cartão" required />
+            <input
+              type="text"
+              placeholder="Nome como impresso no cartão"
+              pattern="[A-Za-zÀ-ÿ\s]+" /* Aceita apenas letras e espaços */
+              required
+            />
           </div>
           <div className="form-row">
             <div className="form-group">
               <label>Validade *</label>
-              <input type="text" placeholder="MM/AA" required />
+              <input
+                type="date"
+                name="expiryDate" /* Aceita apenas uma data */
+                required
+              />
             </div>
             <div className="form-group">
               <label>CVV *</label>
-              <input type="text" placeholder="000" required />
+              <input
+                type="text"
+                name="cvv"
+                placeholder="000"
+                maxLength="4"
+                pattern="\d{4}" /* Aceita apenas números */
+                required
+              />
             </div>
           </div>
         </div>
 
         {/* Resumo dos ingressos */}
-        <div className="form-section" style={{ marginBottom: 16 }}>
+        <div className="resumo-pedido">
           <h2>Resumo do Pedido</h2>
           <ul>
             {itens.map((item, idx) => (
               <li key={idx}>
-                {item.titulo} - Setor: {item.setor} - Fileira: {item.fileira} - Assento: {item.assento} - <strong>{formatPrice(item.preco)}</strong>
+                {item.titulo} - Setor: {item.setor} - Fileira: {item.fileira} - Assento: {item.assento} -{" "}
+                <strong>{formatPrice(item.preco)}</strong>
               </li>
             ))}
           </ul>
-          <div style={{ marginTop: 8, fontWeight: "bold" }}>
-            Total: {formatPrice(total)}
-          </div>
+          <div className="total">Total: {formatPrice(total)}</div>
         </div>
 
         {/* Botão Finalizar */}
