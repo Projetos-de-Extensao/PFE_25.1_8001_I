@@ -7,6 +7,7 @@
   background-color: #f5faff; /* Um cinza claro para o fundo da página */
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 /* Overlay que cobre a página inteira, simulando o foco no modal */
@@ -28,6 +29,7 @@
   max-width: 550px;
   position: relative;
   box-sizing: border-box;
+  border: 2px solid #2563eb;
 }
 
 /* REMOVIDO: As regras de estilo para .close-button e .close-button:hover */

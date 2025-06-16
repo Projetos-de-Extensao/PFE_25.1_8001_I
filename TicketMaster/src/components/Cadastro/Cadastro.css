@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0077b6 0%, #023e8a 100%);
+  background: #f5faff;
   padding: 20px;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -17,6 +17,7 @@
   max-width: 500px;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  border: 2px solid #2563eb;
 }
 
 .cadastro-box:hover {

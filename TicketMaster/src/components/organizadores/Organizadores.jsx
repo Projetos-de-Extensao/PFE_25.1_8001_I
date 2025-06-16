@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Organizadores.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faBuilding, faEnvelope, faPhone, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faBuilding, faEnvelope, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Organizadores() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,7 @@ function Organizadores() {
     nomeDoEventoDetalhado: '',
     dataEvento: '',
     publicoEsperado: '',
+    ingressosDisponiveis: '',
     localEvento: '',
   });
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -24,12 +25,12 @@ function Organizadores() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Dados do formulário enviados:', formData);
-    
+
     setShowSuccessMessage(true);
 
     setTimeout(() => {
       setShowSuccessMessage(false);
-      
+
       setFormData({
         nomeEmpresa: '',
         nomeEvento: '',
@@ -38,6 +39,7 @@ function Organizadores() {
         nomeDoEventoDetalhado: '',
         dataEvento: '',
         publicoEsperado: '',
+        ingressosDisponiveis: '',
         localEvento: '',
       });
     }, 3000);
@@ -119,13 +121,31 @@ function Organizadores() {
             <div className="input-group">
               <label htmlFor="publicoEsperado">Quantidade de Público Esperado</label>
               <input
-                type="number"
+                type="text"
                 id="publicoEsperado"
                 name="publicoEsperado"
                 value={formData.publicoEsperado}
                 onChange={handleChange}
                 required
                 placeholder="500"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                autoComplete="off"
+              />
+            </div>
+            <div className="input-group">
+              <label htmlFor="ingressosDisponiveis">Quantidade de Ingressos Disponíveis</label>
+              <input
+                type="text"
+                id="ingressosDisponiveis"
+                name="ingressosDisponiveis"
+                value={formData.ingressosDisponiveis}
+                onChange={handleChange}
+                required
+                placeholder="300"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                autoComplete="off"
               />
             </div>
             <div className="input-group">
