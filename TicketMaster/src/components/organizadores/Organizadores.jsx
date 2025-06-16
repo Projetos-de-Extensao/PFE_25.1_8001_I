@@ -62,7 +62,7 @@ function Organizadores() {
                 value={formData.nomeEmpresa}
                 onChange={handleChange}
                 required
-                placeholder="Ex: Ticket Seller LTDA"
+                placeholder="Ticket Seller LTDA"
               />
             </div>
             <div className="input-group">
@@ -74,7 +74,7 @@ function Organizadores() {
                 value={formData.nomeEvento}
                 onChange={handleChange}
                 required
-                placeholder="Ex: Festival de Música 2025"
+                placeholder="Festival de Música 2025"
               />
             </div>
             <div className="input-group">
@@ -86,7 +86,7 @@ function Organizadores() {
                 value={formData.emailContato}
                 onChange={handleChange}
                 required
-                placeholder="Ex: contato@empresa.com"
+                placeholder="contato@empresa.com"
               />
             </div>
             <div className="input-group">
@@ -98,7 +98,7 @@ function Organizadores() {
                 value={formData.telefoneContato}
                 onChange={handleChange}
                 required
-                placeholder="Ex: (11) 91234-5678"
+                placeholder="(11) 91234-5678"
               />
             </div>
             <div className="input-group">
@@ -125,7 +125,7 @@ function Organizadores() {
                 value={formData.publicoEsperado}
                 onChange={handleChange}
                 required
-                placeholder="Ex: 500"
+                placeholder="500"
               />
             </div>
             <div className="input-group">
@@ -137,7 +137,7 @@ function Organizadores() {
                 value={formData.localEvento}
                 onChange={handleChange}
                 required
-                placeholder="Ex: Centro de Convenções"
+                placeholder="Centro de Convenções"
               />
             </div>
             <button type="submit" className="submit-button">Enviar</button>
