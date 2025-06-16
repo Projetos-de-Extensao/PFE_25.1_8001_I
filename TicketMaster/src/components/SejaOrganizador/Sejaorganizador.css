@@ -1,0 +1,80 @@
+.organizer-section {
+  position: relative;
+  background-image: url('/images/futebol-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.organizer-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+}
+
+.organizer-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.organizer-section p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #e0e0e0;
+  font-weight: 400;
+}
+
+.organizer-button {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none; /* remove sublinhado */
+  transition: background-color 0.3s ease;
+}
+
+.organizer-button:hover {
+  background-color: #005f8e;
+}
+
+@media (max-width: 768px) {
+  .organizer-section h2 {
+    font-size: 2rem;
+  }
+
+  .organizer-section p {
+    font-size: 1rem;
+  }
+}
+/* Estilo mais fino apenas quando usado na Home */
+.home-organizer .organizer-section {
+  padding: 40px 20px;
+  min-height: 280px;
+}
+
+.home-organizer .organizer-overlay {
+  padding: 24px;
+  max-width: 500px;
+}
+
+.home-organizer .organizer-section h2 {
+  font-size: 2rem;
+}
+
+.home-organizer .organizer-section p {
+  font-size: 1rem;
+}
