@@ -1,73 +1,75 @@
 import React from 'react';
 import './MeusIngressos.css';
-import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaTicketAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaCalendarAlt, FaClock } from 'react-icons/fa';
+import { QRCodeSVG } from 'qrcode.react';
 
 const MeusIngressos = () => {
   return (
     <div className="ingressos-container">
-      <div className="header-ingressos">
-        <h1>Meus Ingressos</h1>
-        <p>Gerencie seus ingressos para os próximos eventos</p>
-      </div>
-
       <div className="ingresso-card">
+        <div className="status-valido">
+          <span>Válido</span>
+        </div>
+        
         <div className="ingresso-header">
-          <div className="status-tag">Válido</div>
-          <div className="evento-data">
+          <h2>Cruzeiro X Atlético Mineiro</h2>
+          <p>Campeonato Mineiro Feminino</p>
+        </div>
+
+        <div className="ingresso-info">
+          <div className="data-hora">
             <FaCalendarAlt /> 19 NOV
             <FaClock /> 11:00
           </div>
+          <div className="local">
+            <FaMapMarkerAlt /> Estádio Mineirão
+          </div>
         </div>
 
-        <div className="ingresso-content">
-          <div className="evento-info">
-            <h2>Cruzeiro X Atlético Mineiro</h2>
-            <p className="evento-tipo">Campeonato Mineiro Feminino</p>
-            <div className="evento-local">
-              <FaMapMarkerAlt />
-              <span>Estádio Mineirão</span>
+        <div className="ingresso-details">
+          <div className="details-left">
+            <div className="detail-item">
+              <span>Portão</span>
+              <strong>F</strong>
+            </div>
+            <div className="detail-item">
+              <span>Setor</span>
+              <strong>Laranja Inferior</strong>
+            </div>
+          </div>
+          
+          <div className="details-right">
+            <div className="detail-item">
+              <span>Fileira</span>
+              <strong>Q</strong>
+            </div>
+            <div className="detail-item">
+              <span>Assento</span>
+              <strong>14</strong>
             </div>
           </div>
 
-          <div className="ingresso-details">
-            <div className="details-column">
-              <div className="detail-item">
-                <span className="detail-label">Portão</span>
-                <span className="detail-value">F</span>
-              </div>
-              <div className="detail-item">
-                <span className="detail-label">Setor</span>
-                <span className="detail-value">Laranja Inferior</span>
-              </div>
-            </div>
-            
-            <div className="details-column">
-              <div className="detail-item">
-                <span className="detail-label">Fileira</span>
-                <span className="detail-value">Q</span>
-              </div>
-              <div className="detail-item">
-                <span className="detail-label">Assento</span>
-                <span className="detail-value">14</span>
-              </div>
-            </div>
+          <div className="qr-code-section">
+            <QRCodeSVG 
+              value="Cruzeiro X Atlético Mineiro - Portão F - Setor Laranja Inferior - Fileira Q - Assento 14" 
+              size={150}
+            />
           </div>
+        </div>
 
-          <div className="ingresso-footer">
-            <div className="titular-info">
-              <h4>Paulo Victor Moraes</h4>
-              <p>CPF: 504.403.914-XX</p>
-            </div>
-            <div className="pedido-info">
-              <span className="ticket-icon"><FaTicketAlt /></span>
-              <span className="pedido-numero">Pedido nº: 8695811-4</span>
-            </div>
+        <div className="ingresso-footer">
+          <div className="titular">
+            <p>Paulo Victor Moraes</p>
+            <p>CPF: 504.403.914-XX</p>
+          </div>
+          <div className="pedido">
+            <p>Pedido nº: 8695811-4</p>
           </div>
         </div>
 
         <div className="ingresso-actions">
-          <button className="action-button download">Baixar Ingresso</button>
-          <button className="action-button share">Compartilhar</button>
+          <button className="btn-baixar">Baixar Ingresso</button>
+          <button className="btn-compartilhar">Compartilhar</button>
         </div>
       </div>
     </div>
