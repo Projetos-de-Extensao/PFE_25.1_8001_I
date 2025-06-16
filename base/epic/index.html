@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Pesquisa - PFE</title>
+    <title>Documentação de Funcionalidades e Tarefas - PFE</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Pesquisa";
-        var mkdocs_page_input_path = "base\\pesquisa.md";
+        var mkdocs_page_name = "Documenta\u00e7\u00e3o de Funcionalidades e Tarefas";
+        var mkdocs_page_input_path = "base\\epic.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -59,13 +59,41 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../entrevista/">Entrevista</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../epic/">Documentação de Funcionalidades e Tarefas</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Documentação de Funcionalidades e Tarefas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#epic-1-estrutura-de-navegacao-e-descoberta-de-partidas">Epic 1: Estrutura de Navegação e Descoberta de Partidas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-11-pagina-inicial-com-destaques">Feature 1.1: Página Inicial com Destaques</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-12-busca-e-filtros-de-jogos">Feature 1.2: Busca e Filtros de Jogos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-13-pagina-de-detalhes-da-partida">Feature 1.3: Página de Detalhes da Partida</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#epic-2-simulacao-de-processo-de-compra">Epic 2: Simulação de Processo de Compra</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-21-formulario-de-dados-do-comprador">Feature 2.1: Formulário de Dados do Comprador</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-22-tela-de-pagamento-simulado">Feature 2.2: Tela de Pagamento Simulado</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#epic-3-tela-de-ingresso-e-historico-do-usuario">Epic 3: Tela de Ingresso e Histórico do Usuário</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-31-tela-de-confirmacao-de-compra">Feature 3.1: Tela de Confirmação de Compra</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#feature-32-perfil-do-usuario-com-historico">Feature 3.2: Perfil do Usuário com Histórico</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../mapa_mental/">Mapas Mentais</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../metodologia/">Metodologia</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Pesquisa</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../pesquisa/">Pesquisa</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../prototipo_alta_fidelidade/">Protótipo</a>
                   </li>
@@ -106,7 +134,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Base</li>
-      <li class="breadcrumb-item active">Pesquisa</li>
+      <li class="breadcrumb-item active">Documentação de Funcionalidades e Tarefas</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -115,40 +143,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>Principais sites de evento:
-- Ingresse
-- Ticketmaster
-- Sympla</p>
-<p>Funcionalidades de cada um:</p>
-<p>Ingresse:
-- Usuário pode escolher a região que está
-- Busca de evento por nome, local, data, tipo de evento (Sertanejo, futebol, rock, gastronomia, etc)
-- Aba para produtores criarem ou divulgarem seu evento
-- FAQ
-- Termos do site
-- Recomendações de evento por tipo</p>
-<p>TicketMaster:
--Ingressos principalmente voltados a Show
--Suporte
--Poder buscar por Artistar
--Destaque de algumas regiões
--Separa Eventos por Local
--Aba de Grandes Eventos</p>
-<p>Sympla:
-- Menu de pesquisa (com filtros de localidades e o tipo de evento )
-- Aba para você criar seu evento online ou físico
-- Uma área de produtor onde você vê as estatísticas do seu evento
-- Footer com as informações do evento
-- Aba de agenda onde você vê seus eventos marcados
-- Aba de coleções onde você vê os tipo de evento que você quer participar</p>
-<p>Tipo de site de evento que será desenvolvido:
-- Nossa conclusão foi optar por fazer um site que seja exclusivamente destinado a venda de ingressos de eventos esportivos.</p>
+                <h1 id="documentacao-de-funcionalidades-e-tarefas">Documentação de Funcionalidades e Tarefas</h1>
+<h2 id="epic-1-estrutura-de-navegacao-e-descoberta-de-partidas">Epic 1: Estrutura de Navegação e Descoberta de Partidas</h2>
+<h3 id="feature-11-pagina-inicial-com-destaques">Feature 1.1: Página Inicial com Destaques</h3>
+<ul>
+<li><strong>User Story 1.1.1</strong>: Como usuário, quero ver os principais jogos em destaque ao entrar no site para saber o que está em alta.</li>
+<li><strong>Task 1.1.1.1</strong>: Criar layout da homepage com carrossel ou grid de jogos em destaque.</li>
+<li><strong>Task 1.1.1.2</strong>: Implementar cards de jogo com imagem, título, data e botão "Ver mais".</li>
+</ul>
+<h3 id="feature-12-busca-e-filtros-de-jogos">Feature 1.2: Busca e Filtros de Jogos</h3>
+<ul>
+<li><strong>User Story 1.2.1</strong>: Como usuário, quero buscar jogos por time, data ou campeonato para encontrar rapidamente o que me interessa.</li>
+<li><strong>Task 1.2.1.1</strong>: Criar campo de busca.</li>
+<li><strong>Task 1.2.1.2</strong>: Implementar filtros visuais.</li>
+<li><strong>Task 1.2.1.3</strong>: Estilizar resultados em uma grid responsiva.</li>
+</ul>
+<h3 id="feature-13-pagina-de-detalhes-da-partida">Feature 1.3: Página de Detalhes da Partida</h3>
+<ul>
+<li><strong>User Story 1.3.1</strong>: Como usuário, quero ver os detalhes de uma partida para saber onde e quando ela acontecerá.</li>
+<li><strong>Task 1.3.1.1</strong>: Criar página com informações como times, local, data e horário.</li>
+<li><strong>Task 1.3.1.2</strong>: Adicionar botão "Selecionar ingresso" com navegação para o mapa de assentos.</li>
+</ul>
+<hr />
+<h2 id="epic-2-simulacao-de-processo-de-compra">Epic 2: Simulação de Processo de Compra</h2>
+<h3 id="feature-21-formulario-de-dados-do-comprador">Feature 2.1: Formulário de Dados do Comprador</h3>
+<ul>
+<li><strong>User Story 2.1.1</strong>: Como usuário, quero preencher meus dados para seguir com a compra.</li>
+<li><strong>Task 2.1.1.1</strong>: Criar formulário com campos nome, e-mail, CPF.</li>
+<li><strong>Task 2.1.1.2</strong>: Estilizar formulário com mensagens de erro.</li>
+</ul>
+<h3 id="feature-22-tela-de-pagamento-simulado">Feature 2.2: Tela de Pagamento Simulado</h3>
+<ul>
+<li><strong>User Story 2.2.1</strong>: Como usuário, quero simular o pagamento com métodos como cartão e PIX.</li>
+<li><strong>Task 2.2.1.1</strong>: Criar componentes para escolher o método de pagamento.</li>
+<li><strong>Task 2.2.1.2</strong>: Mostrar mensagem de "pagamento confirmado" após clique.</li>
+</ul>
+<hr />
+<h2 id="epic-3-tela-de-ingresso-e-historico-do-usuario">Epic 3: Tela de Ingresso e Histórico do Usuário</h2>
+<h3 id="feature-31-tela-de-confirmacao-de-compra">Feature 3.1: Tela de Confirmação de Compra</h3>
+<ul>
+<li><strong>User Story 3.1.1</strong>: Como usuário, quero ver uma tela de confirmação após a compra para saber que deu certo.</li>
+<li><strong>Task 3.1.1.1</strong>: Criar página de sucesso com resumo da compra.</li>
+<li><strong>Task 3.1.1.2</strong>: Gerar QR Code fictício com biblioteca.</li>
+</ul>
+<h3 id="feature-32-perfil-do-usuario-com-historico">Feature 3.2: Perfil do Usuário com Histórico</h3>
+<ul>
+<li><strong>User Story 3.2.1</strong>: Como usuário, quero acessar meus ingressos anteriores simulados.</li>
+<li><strong>Task 3.2.1.1</strong>: Criar página de perfil com lista estática de ingressos.</li>
+<li><strong>Task 3.2.1.2</strong>: Adicionar botão "visualizar ingresso" que abre o QR code.</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../metodologia/" class="btn btn-neutral float-left" title="Metodologia"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../prototipo_alta_fidelidade/" class="btn btn-neutral float-right" title="Protótipo">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../entrevista/" class="btn btn-neutral float-left" title="Entrevista"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mapa_mental/" class="btn btn-neutral float-right" title="Mapas Mentais">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -171,10 +220,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../metodologia/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../entrevista/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../prototipo_alta_fidelidade/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../mapa_mental/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
