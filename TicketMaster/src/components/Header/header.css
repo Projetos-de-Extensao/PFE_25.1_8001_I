@@ -17,6 +17,18 @@
   padding: 0;
   display: flex;
   align-items: center;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.logo:visited,
+.logo:active,
+.logo:focus,
+.logo:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .nav-links {
@@ -33,58 +45,24 @@
   padding: 4px 12px;
   border-radius: 20px;
   transition: background 0.3s, color 0.3s;
+  border-bottom: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link:visited,
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .nav-link:hover {
   background-color: #0077b6;
   color: #fff;
-}
-
-.cart-icon:hover {
-  color: #005f91;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column;
-    height: auto;
-    gap: 6px;
-    padding: 8px 16px;
-  }
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: #0077b6;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  text-decoration: none !important; /* Remove sublinhado */
-  border-bottom: none !important;   /* Remove linha embaixo */
-  box-shadow: none !important;      /* Remove sombra que pode parecer linha */
-}
-
-.logo:visited,
-.logo:active,
-.logo:focus,
-.logo:hover {
-  text-decoration: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  .nav-link {
-    width: 100%;
-  }
 }
 
 .cart-icon {
@@ -94,6 +72,24 @@
   cursor: pointer;
   transition: color 0.2s;
   display: inline-block;
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.cart-icon:visited,
+.cart-icon:active,
+.cart-icon:focus,
+.cart-icon:hover {
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.cart-icon:hover {
+  color: #005f91;
 }
 
 .cart-badge {
@@ -111,4 +107,28 @@
   text-align: center;
   z-index: 1;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    height: auto;
+    gap: 6px;
+    padding: 8px 16px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
 }
