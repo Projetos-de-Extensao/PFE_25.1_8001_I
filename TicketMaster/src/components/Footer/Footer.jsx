@@ -8,7 +8,7 @@ const Footer = () => (
         {/* Sobre */}
         <div className="footer-about">
           <a href="/" className="footer-logo">
-            TicketSeller
+           🎟️ TicketSeller
           </a>
           <div className="footer-description">
             A plataforma líder em venda de ingressos para jogos de futebol no Brasil. Conectamos torcedores aos seus times favoritos com segurança e facilidade.
