@@ -30,23 +30,7 @@
   box-sizing: border-box;
 }
 
-/* Botão de fechar (X) no canto superior direito */
-.close-button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: transparent;
-  border: none;
-  font-size: 1.6rem;
-  color: #adb5bd;
-  cursor: pointer;
-  line-height: 1;
-  padding: 0;
-}
-
-.close-button:hover {
-  color: #495057;
-}
+/* REMOVIDO: As regras de estilo para .close-button e .close-button:hover */
 
 /* Cabeçalho do modal */
 .modal-header {
@@ -195,22 +179,18 @@
 }
 
 /* ========================================= */
-/* REGRAS DE RESPONSIVIDADE         */
+/* REGRAS DE RESPONSIVIDADE                  */
 /* ========================================= */
 
-/* Para telas menores que 600px (maioria dos celulares) */
 @media (max-width: 600px) {
-  /* Reduz o padding geral da página para dar mais espaço ao modal */
   .organizadores-page-container {
     padding: 10px;
   }
 
-  /* Reduz o padding interno do modal */
   .modal-content {
     padding: 25px 20px;
   }
 
-  /* Ajusta o tamanho das fontes do cabeçalho */
   .modal-header h2 {
     font-size: 1.5rem;
   }
@@ -219,17 +199,15 @@
     font-size: 0.9rem;
   }
 
-  /* Ajusta o tamanho da fonte e o padding do botão principal */
   .submit-button {
     padding: 12px;
     font-size: 1rem;
   }
   
-  /* Faz o pop-up de sucesso ocupar a largura e ficar no topo */
   .success-popup {
     top: 10px;
     left: 10px;
     right: 10px;
-    width: auto; /* A largura se ajustará ao container (com os espaçamentos left/right) */
+    width: auto;
   }
 }

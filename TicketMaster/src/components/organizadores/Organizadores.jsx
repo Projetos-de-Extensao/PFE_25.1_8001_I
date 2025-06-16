@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Organizadores.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faBuilding, faEnvelope, faPhone, faTimes, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+// REMOVIDO: O ícone 'faTimes' não é mais necessário
+import { faCalendarAlt, faBuilding, faEnvelope, faPhone, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Organizadores() {
   const [formData, setFormData] = useState({
@@ -23,16 +24,13 @@ function Organizadores() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você adicionaria a lógica para enviar os dados para um servidor, por exemplo.
     console.log('Dados do formulário enviados:', formData);
     
     setShowSuccessMessage(true);
 
-    // Esconde a mensagem de sucesso após 3 segundos
     setTimeout(() => {
       setShowSuccessMessage(false);
       
-      // Opcional: Limpa os campos do formulário
       setFormData({
         nomeEmpresa: '',
         nomeEvento: '',
@@ -46,24 +44,23 @@ function Organizadores() {
     }, 3000);
   };
 
-  const handleClose = () => {
-    // No futuro, você pode usar isso para fechar o modal, por exemplo.
-    console.log('Modal fechado.');
-  };
+  // REMOVIDO: A função handleClose não é mais necessária
+  // const handleClose = () => { ... };
 
   return (
     <div className="organizadores-page-container">
       <div className="modal-overlay">
         <div className="modal-content">
-          <button className="close-button" onClick={handleClose}>
-            <FontAwesomeIcon icon={faTimes} />
-          </button>
+          
+          {/* REMOVIDO: O botão de fechar (X) que estava aqui foi apagado */}
+
           <div className="modal-header">
             <FontAwesomeIcon icon={faBuilding} className="header-icon" />
             <h2>Venda ingressos online</h2>
             <p>Se você está buscando parcerias ou soluções para o seu evento, preencha os dados abaixo.</p>
           </div>
           <form onSubmit={handleSubmit} className="modal-form">
+            {/* O resto do seu formulário permanece igual... */}
             <div className="input-group">
               <label htmlFor="nomeEmpresa">Nome da empresa</label>
               <input type="text" id="nomeEmpresa" name="nomeEmpresa" value={formData.nomeEmpresa} onChange={handleChange} required />
